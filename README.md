@@ -6,17 +6,24 @@
 
 #
 <!-- Badge -->
-![Language](https://img.shields.io/badge/python%203.11-%23FFF.svg?style=for-the-badge&logo=python)
+![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
+![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+
 
 # Thông tin Môn học
 <table>
-  <tr><th>Môn Học     </th><td>Máy học (Machine Learning)</td></tr>
-  <tr><th>Lớp         </th><td>CS114.O11                 </td></tr>
-  <tr><th>GV Lý Thuyết</th><td>PGS.TS Lê Đình Duy        </td></tr>
-  <tr><th>GV Lý Thuyết</th><td>ThS. Phạm Nguyễn Trường An</td></tr>
+  <tr><th>Môn Học     </th><td>Lập trình trực quan</td></tr>
+  <tr><th>Lớp         </th><td>IT008.O12                 </td></tr>
+  <tr><th>GV Lý Thuyết</th><td>Ths. Huỳnh Tuấn Anh        </td></tr>
 </table>
 
 # Thông tin Thành viên
 | MSSV       | Họ và Tên          | Email                   | Github                                                                                                                      |
 | ---------- | ------------------ | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | `22521145` | Trương Lê Vĩnh Phúc| 222521145@gm.uit.edu.vn | [![](https://img.shields.io/badge/sloweyyy-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/sloweyyy) |
+| `22521145` | Trần Thị Mộng Trúc Ngân| 222521145@gm.uit.edu.vn | [![](https://img.shields.io/badge/sloweyyy-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/sloweyyy) |
+| `22521145` | Trần Huỳnh Nhã Uyên| 222521145@gm.uit.edu.vn | [![](https://img.shields.io/badge/sloweyyy-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/sloweyyy) |
