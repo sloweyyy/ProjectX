@@ -205,20 +205,20 @@ namespace ProjectX
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
-            //var client = new RestClient("https://raw.githubusercontent.com/phatjkk/Tool/master/DragonSpeak.txt");
-            //var request = new RestRequest(Method.GET);
-            //IRestResponse response = client.Execute(request);
-            //if (!response.Content.Contains(version))
-            //{
-            //    MessageBox.Show("Đã có phiên bản mới. Hãy cập nhật nhé!");
-            //    System.Diagnostics.Process.Start("https://github.com/phatjkk/SpeakIt_Vietnamese_TTS/releases");
-            //    System.Environment.Exit(1);
-            //}
-            //else
-            //{
+            var client = new RestClient("https://raw.githubusercontent.com/phatjkk/Tool/master/DragonSpeak.txt");
+            var request = new RestRequest(Method.GET);
+            IRestResponse response = client.Execute(request);
+            if (!response.Content.Contains(version))
+            {
+                MessageBox.Show("Đã có phiên bản mới. Hãy cập nhật nhé!");
+                System.Diagnostics.Process.Start("https://github.com/sloweyyy/IT008.O12/releases/");
+                System.Environment.Exit(1);
+            }
+            else
+            {
 
-            //    _apikey.Text = System.IO.File.ReadAllText("APIKey.txt");
-            //}
+                _apikey.Text = System.IO.File.ReadAllText("APIKey.txt");
+            }
 
         }
 

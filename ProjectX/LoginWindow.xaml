@@ -7,10 +7,10 @@
         WindowStyle="ToolWindow" Icon="/Logo-UIT.ico"
         ResizeMode="NoResize">
     <StackPanel Orientation="Vertical" Margin="10">
-        <Label Content="Đăng Nhập" FontWeight="Bold" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <Label Content="Nhập API Key:" FontWeight="Bold"/>
-        <TextBox x:Name="ApiKeyTextBox" Margin="5" Text="" Foreground="#d8d9de"/>
-        <Button Content="Kiểm Tra và Tiếp Tục" Click="CheckApiKey_Click" Background="#202123"/>
+        <Label Content="Đăng Nhập" FontWeight="Bold" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Label Content="Nhập API Key:" FontWeight="Bold" Margin="30,0,30,0"/>
+        <TextBox x:Name="ApiKeyTextBox" Margin="30,0,30,30" Text="" Foreground="#d8d9de" />
+        <Button Content="Đăng nhập" Click="CheckApiKey_Click" Background="#202123" Margin="30,0,30,0"/>
         <!-- khoảng cách -->
         <Label Content=" "/>
         <Button Content="Hướng Dẫn Lấy API Key" FontWeight="Regular" FontSize="12"  Click="GetApiKey_Click" Margin="50,0,50,0" Background="#202123"/>
