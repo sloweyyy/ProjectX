@@ -4,7 +4,7 @@
         Title="Register" Height="269" Width="300"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
-        Background="#202025">
+        Background="#202025" Icon="/App.ico">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

@@ -4,7 +4,7 @@
         Title="Đăng Nhập" Height="321" Width="400"
         WindowStartupLocation="CenterScreen"
         Background="#202025"
-         Icon="/Logo-UIT.ico"
+         Icon="/App.ico"
         ResizeMode="NoResize">
     <StackPanel Orientation="Vertical" Margin="10">
         <Label Content="Đăng Nhập" FontWeight="Bold" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" />

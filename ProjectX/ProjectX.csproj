@@ -337,10 +337,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Logo-UIT.ico" />
+    <Resource Include="assets\Logo-UIT.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="App.ico" />
+    <Resource Include="assets\App.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -355,6 +355,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="App.ico" />
     <Content Include="data\db_user.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

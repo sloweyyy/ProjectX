@@ -17,6 +17,7 @@
 mono_crash.*
 
 # Build results
+[Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
@@ -26,7 +27,7 @@ x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
-
+[Bb]in/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
@@ -395,3 +396,11 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Exclude specific directories and files
+!ocrdata/*
+!audio/*
+!data/*
+!zalotts/*
+!ffmpeg.exe
+!ffplay.exe
