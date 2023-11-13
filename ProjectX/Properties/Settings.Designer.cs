@@ -25,8 +25,8 @@ namespace ProjectX.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\Code Workspace\\WPF\\Projec" +
-            "tX\\IT008.O12\\ProjectX\\data\\db_user.mdf\";Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\data\\db_user." +
+            "mdf;Integrated Security=True\r\n")]
         public string connection_string {
             get {
                 return ((string)(this["connection_string"]));

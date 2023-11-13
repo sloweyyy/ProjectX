@@ -3,7 +3,8 @@
   <Profiles />
   <Settings>
     <Setting Name="connection_string" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\data\db_user.mdf";Integrated Security=True</Value>
+      <Value Profile="(Default)">Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\data\db_user.mdf;Integrated Security=True
+</Value>
     </Setting>
   </Settings>
 </SettingsFile>

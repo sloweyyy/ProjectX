@@ -1,18 +1,15 @@
-﻿using System;
+﻿using IronOcr;
+using RestSharp;
+using System;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Threading;
 using System.Windows;
-using System.Windows.Forms;
 using System.Windows.Input;
-using RestSharp;
-using IronOcr;
-
 using MessageBox = System.Windows.MessageBox;
-using Microsoft.Win32;
 using OpenFileDialog = Microsoft.Win32.OpenFileDialog;
-using System.Data.SqlClient;
 
 namespace ProjectX
 {
@@ -85,7 +82,6 @@ namespace ProjectX
                 _text.Text = extractedText;
             }
         }
-
 
         private string PerformOcr(string imagePath)
         {

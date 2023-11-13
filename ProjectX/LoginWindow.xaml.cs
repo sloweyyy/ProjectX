@@ -1,8 +1,4 @@
-﻿using Org.BouncyCastle.Crypto.Generators;
-using System;
-using System.Data.SqlClient;
-using System.Security.Cryptography;
-using System.Text;
+﻿using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
 

@@ -1,8 +1,7 @@
-﻿using System.Data.SqlClient;
-using System.Windows;
-using Newtonsoft.Json;
-using Org.BouncyCastle.Crypto.Generators;
+﻿using Newtonsoft.Json;
 using RestSharp;
+using System.Data.SqlClient;
+using System.Windows;
 
 namespace ProjectX
 {
