@@ -25,12 +25,23 @@ namespace ProjectX
     /// </summary>
     public partial class LoginWindow
     {
-        string apiKey = File.ReadAllText("APIKey.txt");
+        string apiKey = "";
+        private void ReadAPIKey()
+        {
+            string path = "APIKey.txt";
+            if (File.Exists(path))
+            {
+                apiKey = File.ReadAllText(path);
+                ApiKeyTextBox.Text = apiKey;
+            }
+            else File.Create(path);
+        }
+
 
         public LoginWindow()
         {
             InitializeComponent();
-            ApiKeyTextBox.Text = apiKey;
+            ReadAPIKey();
         }
         private void CheckApiKey_Click(object sender, RoutedEventArgs e)
         {

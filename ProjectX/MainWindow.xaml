@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectX"
         mc:Ignorable="d"
-        Title="ProjectX" Height="377" Width="728" WindowStartupLocation="CenterScreen" Background="#202025" ResizeMode="NoResize" Visibility="Visible" WindowStyle="SingleBorderWindow" LostTouchCapture="Grid_MouseLeftButtonDown" Loaded="Window_Loaded" MouseLeftButtonDown="Window_MouseLeftButtonDown" MouseDown="Window_MouseDown_1">
+        Title="ProjectX" Height="377" Width="728" WindowStartupLocation="CenterScreen" Background="#202025" ResizeMode="NoResize" Visibility="Visible" WindowStyle="SingleBorderWindow" LostTouchCapture="Grid_MouseLeftButtonDown" Loaded="Window_Loaded" MouseLeftButtonDown="Window_MouseLeftButtonDown" MouseDown="Window_MouseDown_1" Icon="/App.ico">
 
     <Grid x:Name="_back" MouseLeftButtonDown="_back_MouseLeftButtonDown" Height="337" VerticalAlignment="Top">
         <Grid.ColumnDefinitions>
