@@ -1,2 +1,4 @@
 
 *.vsidx
+.vs/ProjectX/v17/.suo
+.vs/*
