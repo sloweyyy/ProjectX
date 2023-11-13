@@ -326,7 +326,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <None Include="API.pdf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -335,12 +334,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="assets\Logo-UIT.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="assets\App.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -355,7 +348,14 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="LogoTitlesmall.png" />
+    <Resource Include="Logo.png" />
     <Resource Include="App.ico" />
+    <Resource Include="assets\AppIcon.ico" />
+    <Resource Include="assets\Logo.ico" />
+    <Resource Include="AppIcon.ico" />
+    <Resource Include="assets\Logo.png" />
+    <Resource Include="assets\LogoTitlesmall.png" />
     <Content Include="data\db_user.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

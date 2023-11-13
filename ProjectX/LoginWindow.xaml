@@ -4,7 +4,7 @@
         Title="Đăng Nhập" Height="321" Width="400"
         WindowStartupLocation="CenterScreen"
         Background="#202025"
-         Icon="/App.ico"
+         Icon="/AppIcon.ico"
         ResizeMode="NoResize">
     <StackPanel Orientation="Vertical" Margin="10">
         <Label Content="Đăng Nhập" FontWeight="Bold" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" />
@@ -15,11 +15,11 @@
 
         <!-- Password Input -->
         <Label Content="Nhập Mật Khẩu:" FontWeight="Bold" Margin="30,0,30,0"/>
-        <PasswordBox x:Name="PasswordBox" Margin="30,0,30,10" PasswordChar="*" />
+        <PasswordBox x:Name="PasswordBox" Margin="30,0,30,10" PasswordChar="*" Foreground="#ffffff"/>
 
         <!-- Login and Register Buttons -->
-        <Button Content="Đăng nhập" Click="CheckLogin_Click" Background="#202123" Margin="30,0,30,10"/>
-        <Button Content="Đăng Ký" Click="OpenRegisterForm_Click" Background="#202123" Margin="30,0,30,10"/>
+        <Button Content="Đăng nhập" Click="CheckLogin_Click" Background="#202123" Margin="30,0,30,10" BorderBrush="#4285f4"/>
+        <Button Content="Đăng Ký" Click="OpenRegisterForm_Click" Background="#202123" Margin="30,0,30,10" BorderBrush="#ea4335"/>
 
         <!-- Additional Buttons -->
     </StackPanel>
