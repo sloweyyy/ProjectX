@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("data/db_user.mdf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("data/db_user_log.ldf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("eng.base.traineddata")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("eng.best.traineddata")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("eng.fast.traineddata")]

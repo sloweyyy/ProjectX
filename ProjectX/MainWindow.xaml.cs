@@ -12,6 +12,7 @@ using IronOcr;
 using MessageBox = System.Windows.MessageBox;
 using Microsoft.Win32;
 using OpenFileDialog = Microsoft.Win32.OpenFileDialog;
+using System.Data.SqlClient;
 
 namespace ProjectX
 {
@@ -32,16 +33,37 @@ namespace ProjectX
         Process ffmpeg;
         XuLyAmThanh MainXuLy;
         string keylone = "";
-
-        public MainWindow(string apiKey)
+        string connectionString = Properties.Settings.Default.connection_string;
+        public MainWindow(string username)
         {
             InitializeComponent();
+            string apiKey = GetApiKeyByUsername(username); // Sử dụng hàm để lấy apiKey từ cơ sở dữ liệu
             _apikey.Text = apiKey;
             ThreadUpdateUI = new Thread(() => UpdateUI());
             ThreadUpdateUI.IsBackground = true;
             ThreadUpdateUI.Start();
-
         }
+        private string GetApiKeyByUsername(string username)
+        {
+            string apiKey = ""; // Khởi tạo apiKey trống
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand("SELECT apikey FROM Users WHERE username = @username", connection);
+                command.Parameters.AddWithValue("@username", username);
+
+                object result = command.ExecuteScalar();
+
+                if (result != null)
+                {
+                    apiKey = result.ToString(); // Gán apiKey từ kết quả truy vấn
+                }
+            }
+
+            return apiKey;
+        }
+
         private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             var move = sender as System.Windows.Controls.Grid;
