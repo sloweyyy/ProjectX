@@ -1,92 +1,107 @@
-﻿using Emgu.CV.LineDescriptor;
-using iTextSharp.text.pdf.qrcode;
-using Newtonsoft.Json;
-using RestSharp;
+﻿using Org.BouncyCastle.Crypto.Generators;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+using System.Data.SqlClient;
+using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ProjectX
 {
-    /// <summary>
-    /// Interaction logic for LoginWindow.xaml
-    /// </summary>
-    public partial class LoginWindow
+    public partial class LoginWindow : Window
     {
-        string apiKey = "";
-        private void ReadAPIKey()
-        {
-            string path = "APIKey.txt";
-            if (File.Exists(path))
-            {
-                apiKey = File.ReadAllText(path);
-                ApiKeyTextBox.Text = apiKey;
-            }
-            else File.Create(path);
-        }
-
+        string connectionString = Properties.Settings.Default.connection_string;
 
         public LoginWindow()
         {
             InitializeComponent();
-            ReadAPIKey();
+            LoadUsers();
         }
-        private void CheckApiKey_Click(object sender, RoutedEventArgs e)
-        {
 
-            bool isValid = CheckKey(ApiKeyTextBox.Text);
-            if (isValid)
+        private void CheckLogin_Click(object sender, RoutedEventArgs e)
+        {
+            string selectedUsername = UserComboBox.SelectedItem as string;
+            string enteredPassword = PasswordBox.Password;
+
+            if (selectedUsername != null && !string.IsNullOrEmpty(enteredPassword))
             {
-                File.WriteAllText("APIKey.txt", ApiKeyTextBox.Text);
-                MainWindow mainWindow = new MainWindow(ApiKeyTextBox.Text);
-                mainWindow.Show();
-                this.Close();
+                string storedPasswordHash = GetPasswordHash(selectedUsername);
+
+                if (storedPasswordHash != null && VerifyPassword(enteredPassword, storedPasswordHash))
+                {
+                    // Password is valid, grant access
+                    MessageBox.Show("Đăng nhập thành công.");
+                    // You can open the main window or perform other actions here.
+                    // open the main window
+                    // public MainWindow(string username)
+                    MainWindow mainWindow = new MainWindow(selectedUsername);
+                    mainWindow.Show();
+
+                    // Close the login window
+                    this.Close();
+                }
+                else
+                {
+                    // Password is invalid
+                    MessageBox.Show("Mật khẩu không đúng.");
+                }
             }
             else
             {
-                MessageBox.Show("API Key không hợp lệ.");
-                ApiKeyTextBox.Text = "Nhập API Key vào đây";
+                MessageBox.Show("Vui lòng chọn tài khoản và nhập mật khẩu.");
             }
         }
 
-        private bool CheckKey(string key)
+        private string GetPasswordHash(string username)
         {
-            var client = new RestClient("https://api.zalo.ai/v1/tts/synthesize");
-            var request = new RestRequest(Method.POST);
-            request.AddHeader("apikey", key);
-            request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
-            request.AddParameter("input", "Kiểm tra API key"); // Thêm dữ liệu mẫu
-
-            var response = client.Execute(request);
-            if (response.IsSuccessful)
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                var jsonResponse = JsonConvert.DeserializeObject<dynamic>(response.Content);
-                int errorCode = jsonResponse.error_code;
+                connection.Open();
+                SqlCommand command = new SqlCommand("SELECT password FROM Users WHERE username = @username", connection);
+                command.Parameters.AddWithValue("@username", username);
 
-                if (errorCode == 0)
+                object result = command.ExecuteScalar();
+
+                if (result != null)
                 {
-                    return true; // Key hợp lệ nếu errorCode là 0
+                    return result.ToString();
                 }
             }
-            return false; // Trả về false nếu có lỗi hoặc errorCode không phải là 0
+
+            return null;
+        }
+
+        private bool VerifyPassword(string enteredPassword, string storedPasswordHash)
+        {
+            return BCrypt.Net.BCrypt.Verify(enteredPassword, storedPasswordHash);
         }
 
 
-        private void GetApiKey_Click(object sender, RoutedEventArgs e)
+        private void LoadUsers()
         {
-            File.Open("D:/Code Workspace/WPF/ProjectX/ProjectX/API.pdf", FileMode.Open);
+            UserComboBox.Items.Clear();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand("SELECT username FROM Users", connection);
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        UserComboBox.Items.Add(reader["username"].ToString());
+                    }
+                }
+            }
+        }
+
+        private void OpenRegisterForm_Click(object sender, RoutedEventArgs e)
+        {
+            // Open the register window
+            RegisterWindow registerWindow = new RegisterWindow();
+            registerWindow.Show();
+
+            // Close the login window
+            this.Close();
         }
     }
 }
