@@ -26,4 +26,4 @@
 | ---------- | ------------------ | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | `22521145` | Trương Lê Vĩnh Phúc| 222521145@gm.uit.edu.vn | [![](https://img.shields.io/badge/sloweyyy-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/sloweyyy) |
 | `22521644` | Trần Huỳnh Nhã Uyên| 22521644@gm.uit.edu.vn | [![](https://img.shields.io/badge/tranuyn-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/tranuyn) |
-| `22521145` | Trần Thị Mộng Trúc Ngân| 222521145@gm.uit.edu.vn | [![](https://img.shields.io/badge/sloweyyy-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/sloweyyy) |
+| `22520936` | Trần Thị Mộng Trúc Ngân| 22520936@gm.uit.edu.vn | [![](https://img.shields.io/badge/sloweyyy-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/sloweyyy) |
