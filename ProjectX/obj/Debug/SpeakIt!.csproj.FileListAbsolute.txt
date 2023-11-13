@@ -1,0 +1,300 @@
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\bin\Debug\SpeakIt!.exe.config
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\bin\Debug\SpeakIt!.exe
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\bin\Debug\SpeakIt!.pdb
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\bin\Debug\NAudio.dll
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\bin\Debug\NAudio.xml
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.csprojAssemblyReference.cache
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\obj\Debug\MainWindow.g.cs
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\obj\Debug\App.g.cs
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.cache
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.lref
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\obj\Debug\MainWindow.baml
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.g.resources
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt_.Properties.Resources.resources
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.csproj.GenerateResource.cache
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.csproj.CoreCompileInputs.cache
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.csproj.CopyComplete
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.exe
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.pdb
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ngoc Nguyen\source\repos\SpeakIt!\SpeakIt!\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\SpeakIt!.exe.config
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\SpeakIt!.exe
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\SpeakIt!.pdb
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.dll
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\RestSharp.dll
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.xml
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\RestSharp.xml
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.csprojAssemblyReference.cache
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\obj\Debug\MainWindow.g.cs
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\obj\Debug\App.g.cs
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.cache
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.lref
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\obj\Debug\MainWindow.baml
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.g.resources
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt_.Properties.Resources.resources
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.csproj.GenerateResource.cache
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.csproj.CoreCompileInputs.cache
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.csproj.CopyComplete
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.exe
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.pdb
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.Asio.dll
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.Core.dll
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.Midi.dll
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.Wasapi.dll
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.WinForms.dll
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.WinMM.dll
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\MaterialDesignColors.dll
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Thanh Phat\Desktop\SpeakIt!\SpeakIt!\obj\Debug\App.baml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\SpeakIt!.exe.config
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\SpeakIt!.exe
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\SpeakIt!.pdb
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\MaterialDesignColors.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.Asio.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.Core.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.Midi.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.Wasapi.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.WinForms.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.WinMM.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\RestSharp.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\NAudio.xml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\RestSharp.xml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.csprojAssemblyReference.cache
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\obj\Debug\MainWindow.g.cs
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\obj\Debug\App.g.cs
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.cache
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.lref
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\obj\Debug\App.baml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\obj\Debug\MainWindow.baml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.g.resources
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt_.Properties.Resources.resources
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.csproj.GenerateResource.cache
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.csproj.CoreCompileInputs.cache
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.csproj.CopyComplete
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.exe
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt!\SpeakIt!\obj\Debug\SpeakIt!.pdb
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\SpeakIt!.exe.config
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\SpeakIt!.exe
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\SpeakIt!.pdb
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\MaterialDesignColors.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.Asio.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.Core.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.Midi.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.Wasapi.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.WinForms.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.WinMM.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\RestSharp.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.xml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\RestSharp.xml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.csprojAssemblyReference.cache
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\MainWindow.g.cs
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\App.g.cs
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.cache
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.lref
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\App.baml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\MainWindow.baml
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.g.resources
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt_.Properties.Resources.resources
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.csproj.GenerateResource.cache
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.csproj.CoreCompileInputs.cache
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.csproj.CopyComplete
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.exe
+C:\Users\Thanh Phat\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.pdb
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\SpeakIt!.exe.config
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\SpeakIt!.exe
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\SpeakIt!.pdb
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\MaterialDesignColors.dll
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.Asio.dll
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.Core.dll
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.dll
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.Midi.dll
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.Wasapi.dll
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.WinForms.dll
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.WinMM.dll
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\Newtonsoft.Json.dll
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\RestSharp.dll
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\System.Security.AccessControl.dll
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\MaterialDesignColors.pdb
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.xml
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\Newtonsoft.Json.xml
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\RestSharp.xml
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\System.Security.AccessControl.xml
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.csprojAssemblyReference.cache
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\MainWindow.g.cs
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\App.g.cs
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.cache
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.lref
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\App.baml
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\MainWindow.baml
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.g.resources
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt_.Properties.Resources.resources
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.csproj.GenerateResource.cache
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.csproj.CoreCompileInputs.cache
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.csproj.CopyComplete
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.exe
+C:\Users\phatjk\Desktop\Desktop\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.pdb
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\SpeakIt!.exe.config
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\SpeakIt!.exe
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\SpeakIt!.pdb
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\MaterialDesignColors.dll
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\Microsoft.Win32.Registry.dll
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.Asio.dll
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.Core.dll
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.dll
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.Midi.dll
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.Wasapi.dll
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.WinForms.dll
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.WinMM.dll
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\Newtonsoft.Json.dll
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\RestSharp.dll
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\System.Security.AccessControl.dll
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\System.Security.Principal.Windows.dll
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\MaterialDesignColors.pdb
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\Microsoft.Win32.Registry.xml
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\NAudio.xml
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\Newtonsoft.Json.xml
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\RestSharp.xml
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\System.Security.AccessControl.xml
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\bin\Debug\System.Security.Principal.Windows.xml
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.csproj.AssemblyReference.cache
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\obj\Debug\MainWindow.g.cs
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\obj\Debug\App.g.cs
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.cache
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.lref
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\obj\Debug\App.baml
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\obj\Debug\MainWindow.baml
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.g.resources
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt_.Properties.Resources.resources
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.csproj.GenerateResource.cache
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.csproj.CoreCompileInputs.cache
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.exe
+D:\desktop\Desktop\code\SpeakIt! + download\SpeakIt!\obj\Debug\SpeakIt!.pdb
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\SpeakIt!.exe.config
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\SpeakIt!.exe
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\SpeakIt!.pdb
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\MaterialDesignColors.dll
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.Asio.dll
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.Core.dll
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.dll
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.Midi.dll
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.Wasapi.dll
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.WinForms.dll
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.WinMM.dll
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\RestSharp.dll
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.xml
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\RestSharp.xml
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!.csproj.AssemblyReference.cache
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!.csproj.SuggestedBindingRedirects.cache
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\MainWindow.g.cs
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\App.g.cs
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.cache
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.lref
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\App.baml
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\MainWindow.baml
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!.g.resources
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt_.Properties.Resources.resources
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!.csproj.GenerateResource.cache
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!.csproj.CoreCompileInputs.cache
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!.csproj.CopyComplete
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!.exe
+C:\Users\Stanl\OneDrive\Desktop\Project\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!.pdb
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\SpeakIt!.exe.config
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\SpeakIt!.exe
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\SpeakIt!.pdb
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\MaterialDesignColors.dll
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\Microsoft.Win32.Registry.dll
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.Asio.dll
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.Core.dll
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.dll
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.Midi.dll
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.Wasapi.dll
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.WinForms.dll
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.WinMM.dll
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\Newtonsoft.Json.dll
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\RestSharp.dll
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\System.Security.AccessControl.dll
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\System.Security.Principal.Windows.dll
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\MaterialDesignColors.pdb
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\Microsoft.Win32.Registry.xml
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\NAudio.xml
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\Newtonsoft.Json.xml
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\RestSharp.xml
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\System.Security.AccessControl.xml
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\bin\Debug\System.Security.Principal.Windows.xml
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!.csproj.AssemblyReference.cache
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\MainWindow.g.cs
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\App.g.cs
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.cache
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!_MarkupCompile.lref
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\App.baml
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\MainWindow.baml
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!.g.resources
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt_.Properties.Resources.resources
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!.csproj.GenerateResource.cache
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!.csproj.CoreCompileInputs.cache
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!.csproj.CopyComplete
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!.exe
+D:\Code Workspace\WPF\SpeakIt_Vietnamese_TTS\SpeakIt!\obj\Debug\SpeakIt!.pdb
