@@ -265,6 +265,10 @@ namespace ProjectX
             }
         }
 
+        private void _text_TextChanged_1(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+
+        }
 
         private void Backround()
         {
