@@ -44,14 +44,14 @@ namespace ProjectX
         }
         private string GetApiKeyByUsername(string username)
         {
-            string apiKey = ""; // Khởi tạo apiKey trống
+            string apiKey = ""; 
 
             MongoClient
                 client = new MongoClient(
-                    "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/"); // Thay đổi chuỗi kết nối để phù hợp với cài đặt MongoDB của bạn
+                    "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/"); 
             IMongoDatabase
                 database = client
-                    .GetDatabase("ProjectX"); // Thay "your-database-name" bằng tên cơ sở dữ liệu MongoDB của bạn
+                    .GetDatabase("ProjectX"); 
             IMongoCollection<BsonDocument>
                 collection =
                     database.GetCollection<BsonDocument>("users");
@@ -61,7 +61,7 @@ namespace ProjectX
 
             if (result != null)
             {
-                apiKey = result.GetValue("apikey").AsString; // Lấy giá trị của trường "apikey" từ kết quả truy vấn
+                apiKey = result.GetValue("apikey").AsString; 
             }
 
             return apiKey;
@@ -228,20 +228,7 @@ namespace ProjectX
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
-            //var client = new RestClient("https://raw.githubusercontent.com/sloweyyy/IT008.O12/main/ProjectX/version.txt");
-            //var request = new RestRequest(Method.GET);
-            //IRestResponse response = client.Execute(request);
-            //if (!response.Content.Contains(version))
-            //{
-            //    MessageBox.Show("Đã có phiên bản mới. Hãy cập nhật nhé!");
-            //    System.Diagnostics.Process.Start("https://github.com/sloweyyy/IT008.O12/releases/");
-            //    System.Environment.Exit(1);
-            //}
-            //else
-            //{
-
-            //    _apikey.Text = System.IO.File.ReadAllText("APIKey.txt");
-            //}
+            
 
         }
 

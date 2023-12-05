@@ -16,22 +16,18 @@ namespace ProjectX.Views
         public RegisterWindow()
         {
             InitializeComponent();
-            _database = GetMongoDatabase(); // Initialize the MongoDB database connection
+            _database = GetMongoDatabase();
         }
 
         private IMongoDatabase GetMongoDatabase()
         {
-            // Set your MongoDB connection string and database name
             string connectionString =
-                "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/"; // Update with your MongoDB server details
-            string databaseName = "ProjectX"; // Update with your database name
+                "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/";
+            string databaseName = "ProjectX";
 
             var client = new MongoClient(connectionString);
             return client.GetDatabase(databaseName);
         }
-
-        // This method checks if the username is already taken.
-        // It returns true if the username is already taken, otherwise it returns false.
         private bool CheckUsername(string username)
         {
             var usersCollection = _database.GetCollection<BsonDocument>("users");
@@ -39,16 +35,13 @@ namespace ProjectX.Views
             var filter = Builders<BsonDocument>.Filter.Eq("username", username);
             var count = usersCollection.CountDocuments(filter);
 
-            return count > 0; // Username exists if count > 0
+            return count > 0;
         }
 
-        // This method registers a new user.
-        // It returns true if the registration is successful, otherwise it returns false.
         private bool Register(string username, string apiKey, string password)
         {
             var usersCollection = _database.GetCollection<BsonDocument>("users");
 
-            // Hash the password using bcrypt
             string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
 
             var document = new BsonDocument
@@ -61,13 +54,12 @@ namespace ProjectX.Views
             try
             {
                 usersCollection.InsertOne(document);
-                return true; // Registration successful
+                return true;
             }
             catch (Exception ex)
             {
-                // Handle any exceptions that may occur during registration
                 Console.WriteLine(ex.Message);
-                return false; // Registration failed
+                return false;
             }
         }
 
@@ -81,7 +73,6 @@ namespace ProjectX.Views
             {
                 if (CheckUsername(username))
                 {
-                    // Username is already taken
                     MessageBox.Show("Tên tài khoản đã tồn tại.");
                 }
                 else
@@ -115,7 +106,6 @@ namespace ProjectX.Views
 
         private void BackToLoginButton_Click(object sender, RoutedEventArgs e)
         {
-            // Close the current window and open the login window
             LoginWindow loginWindow = new LoginWindow();
             loginWindow.Show();
             this.Close();
@@ -138,7 +128,5 @@ namespace ProjectX.Views
             return true;
         }
 
-
-        
     }
 }

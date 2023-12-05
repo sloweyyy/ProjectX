@@ -13,16 +13,15 @@ namespace ProjectX.Views
         public LoginWindow()
         {
             InitializeComponent();
-            _usersCollection = GetMongoCollection(); // Initialize the MongoDB collection
+            _usersCollection = GetMongoCollection(); 
             Loaded += Window_Loaded;
         }
 
         private IMongoCollection<User> GetMongoCollection()
         {
-            // Set your MongoDB connection string and database name
             string connectionString =
-                "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/"; // Update with your MongoDB server details
-            string databaseName = "ProjectX"; // Update with your database name
+                "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/"; 
+            string databaseName = "ProjectX"; 
 
             var client = new MongoClient(connectionString);
             var database = client.GetDatabase(databaseName);
@@ -47,19 +46,13 @@ namespace ProjectX.Views
 
                 if (VerifyPassword(enteredPassword, user.password))
                 {
-                    // Password is valid, grant access
-
-                    // You can open the main window or perform other actions here.
-                    // Open the main window
                     MainWindow mainWindow = new MainWindow(selectedUsername);
                     mainWindow.Show();
 
-                    // Close the login window
                     this.Close();
                 }
                 else
                 {
-                    // Password is invalid
                     MessageBox.Show("Sai tên tài khoản hoặc mật khẩu.");
                 }
             }
@@ -83,11 +76,9 @@ namespace ProjectX.Views
 
         private void OpenRegisterForm_Click(object sender, RoutedEventArgs e)
         {
-            // Open the register window
             RegisterWindow registerWindow = new RegisterWindow();
             registerWindow.Show();
 
-            // Close the login window
             this.Close();
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
