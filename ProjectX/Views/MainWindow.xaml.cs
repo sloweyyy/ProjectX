@@ -1,4 +1,6 @@
 ﻿using IronOcr;
+using MongoDB.Bson;
+using MongoDB.Driver;
 using RestSharp;
 using System;
 using System.Data.SqlClient;
@@ -44,18 +46,22 @@ namespace ProjectX
         {
             string apiKey = ""; // Khởi tạo apiKey trống
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            MongoClient
+                client = new MongoClient(
+                    "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/"); // Thay đổi chuỗi kết nối để phù hợp với cài đặt MongoDB của bạn
+            IMongoDatabase
+                database = client
+                    .GetDatabase("ProjectX"); // Thay "your-database-name" bằng tên cơ sở dữ liệu MongoDB của bạn
+            IMongoCollection<BsonDocument>
+                collection =
+                    database.GetCollection<BsonDocument>("users");
+
+            var filter = Builders<BsonDocument>.Filter.Eq("username", username);
+            var result = collection.Find(filter).FirstOrDefault();
+
+            if (result != null)
             {
-                connection.Open();
-                SqlCommand command = new SqlCommand("SELECT apikey FROM Users WHERE username = @username", connection);
-                command.Parameters.AddWithValue("@username", username);
-
-                object result = command.ExecuteScalar();
-
-                if (result != null)
-                {
-                    apiKey = result.ToString(); // Gán apiKey từ kết quả truy vấn
-                }
+                apiKey = result.GetValue("apikey").AsString; // Lấy giá trị của trường "apikey" từ kết quả truy vấn
             }
 
             return apiKey;
@@ -157,7 +163,6 @@ namespace ProjectX
             }
             else
             {
-                File.WriteAllText("APIKey.txt", _apikey.Text);
                 string text = _text.Text;
                 int gender = arrGiongmini[Array.IndexOf(arrGiong, _nguoidoc.Text)];
                 string speed = StringBetween(_tocdo.Text, "(", ")");

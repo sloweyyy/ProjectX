@@ -1,17 +1,20 @@
 ﻿using MongoDB.Driver;
 using System.Windows.Controls;
 using System.Windows;
+using RestSharp;
+using System.IO;
 
 namespace ProjectX.Views
 {
     public partial class LoginWindow : Window
     {
         private readonly IMongoCollection<User> _usersCollection;
-
+        private string version = File.ReadAllText("..\\..\\version.txt");
         public LoginWindow()
         {
             InitializeComponent();
             _usersCollection = GetMongoCollection(); // Initialize the MongoDB collection
+            Loaded += Window_Loaded;
         }
 
         private IMongoCollection<User> GetMongoCollection()
@@ -87,7 +90,23 @@ namespace ProjectX.Views
             // Close the login window
             this.Close();
         }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
 
-      
+            var client = new RestClient("https://raw.githubusercontent.com/sloweyyy/IT008.O12/main/ProjectX/version.txt");
+
+            var request = new RestRequest(Method.GET);
+            IRestResponse response = client.Execute(request);
+            if (!response.Content.Contains(version))
+            {
+                MessageBox.Show("Đã có phiên bản mới. Hãy cập nhật nhé!");
+                System.Diagnostics.Process.Start("https://github.com/sloweyyy/IT008.O12/releases");
+            }
+
+
+
+        }
+
+
     }
 }

@@ -405,17 +405,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mongocrypt.dll" />
+    <Resource Include="version.txt" />
     <Resource Include="assets\AppIcon.ico" />
     <Resource Include="assets\Logo.ico" />
     <Resource Include="assets\Logo.png" />
     <Resource Include="assets\LogoTitlesmall.png" />
-    <Content Include="data\db_user.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="data\db_user_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>db_user.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\AWSSDK.SecurityToken.3.7.100.14\analyzers\dotnet\cs\AWSSDK.SecurityToken.CodeAnalysis.dll" />
