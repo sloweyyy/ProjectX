@@ -1,0 +1,28 @@
+﻿<Window x:Class="ProjectX.Views.OCR"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="OCR" Height="450" Width="800"
+        Background="#202025" WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" Icon="../assets/AppIcon.ico"
+        WindowStyle="SingleBorderWindow">
+
+    <Grid>
+        <Image Source="../assets/Logo.png" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" Height="52" Width="140"/>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="BtnOpenFile" Content="Open File" Click="BtnOpenFile_Click" 
+                    Background="#202123" Foreground="White" 
+                    BorderBrush="#4285f4" Width="200" Height="24" Margin="10"/>
+            <TextBox x:Name="TextContent" 
+         Width="538" Height="241" 
+         HorizontalAlignment="Left" 
+         TextWrapping="Wrap" AcceptsReturn="True" 
+         VerticalScrollBarVisibility="Auto" 
+         HorizontalScrollBarVisibility="Auto" 
+         Foreground="White" Background="#41414b" 
+         FontFamily="Segoe UI" FontSize="12"
+         BorderBrush="#4285f4" />
+            <Label x:Name="CharCountLabel" Content="Characters: 0" Foreground="White" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
