@@ -1,17 +1,32 @@
-﻿using System.Data.SqlClient;
+﻿using System;
+using System.Text.Json;
 using System.Windows;
-using System.Windows.Controls;
+using MongoDB.Bson;
+using MongoDB.Driver;
 
 namespace ProjectX
 {
     public partial class LoginWindow : Window
     {
-        string connectionString = Properties.Settings.Default.connection_string;
+        private readonly IMongoCollection<BsonDocument> _usersCollection;
 
         public LoginWindow()
         {
             InitializeComponent();
-            LoadUsers();
+            _usersCollection = GetMongoCollection(); // Initialize the MongoDB collection
+        }
+
+        private IMongoCollection<BsonDocument> GetMongoCollection()
+        {
+            // Set your MongoDB connection string and database name
+            string connectionString = "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/"; // Update with your MongoDB server details
+            string databaseName = "ProjectX"; // Update with your database name
+            string collectionName = "users"; // Update with your collection name
+
+            var client = new MongoClient(connectionString);
+            var database = client.GetDatabase(databaseName);
+
+            return database.GetCollection<BsonDocument>(collectionName);
         }
 
         private void CheckLogin_Click(object sender, RoutedEventArgs e)
@@ -21,9 +36,17 @@ namespace ProjectX
 
             if (selectedUsername != null && !string.IsNullOrEmpty(enteredPassword))
             {
-                string storedPasswordHash = GetPasswordHash(selectedUsername);
+                var user = GetUser(selectedUsername);
 
-                if (storedPasswordHash != null && VerifyPassword(enteredPassword, storedPasswordHash))
+                if (user == null)
+                {
+                    MessageBox.Show("Sai tên tài khoản hoặc mật khẩu.");
+                    return;
+                }
+
+                string storedPasswordHash = user.GetValue("password").AsString;
+
+                if (VerifyPassword(enteredPassword, storedPasswordHash))
                 {
                     // Password is valid, grant access
                     MessageBox.Show("Đăng nhập thành công.");
@@ -48,44 +71,29 @@ namespace ProjectX
             }
         }
 
-        private string GetPasswordHash(string username)
+        private BsonDocument GetUser(string username)
         {
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-                SqlCommand command = new SqlCommand("SELECT password FROM Users WHERE username = @username", connection);
-                command.Parameters.AddWithValue("@username", username);
-
-                object result = command.ExecuteScalar();
-
-                if (result != null)
-                {
-                    return result.ToString();
-                }
-            }
-
-            return null;
+            var filter = Builders<BsonDocument>.Filter.Eq("username", username);
+            return _usersCollection.Find(filter).FirstOrDefault();
         }
 
         private bool VerifyPassword(string enteredPassword, string storedPasswordHash)
         {
-            return BCrypt.Net.BCrypt.Verify(enteredPassword, storedPasswordHash);
+            // Implement password verification logic here (e.g., using BCrypt)
+            // You can use BCrypt.Net or any other library to verify passwords
+            // Example: return BCrypt.Net.BCrypt.Verify(enteredPassword, storedPasswordHash);
+            // Make sure to add the necessary NuGet packages for BCrypt.Net or your chosen library.
+            throw new NotImplementedException("Implement password verification logic here.");
         }
-
 
         private void LoadUsers()
         {
             UserComboBox.Items.Clear();
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (var cursor = _usersCollection.Find(new BsonDocument()).ToCursor())
             {
-                connection.Open();
-                SqlCommand command = new SqlCommand("SELECT username FROM Users", connection);
-                using (SqlDataReader reader = command.ExecuteReader())
+                foreach (var document in cursor.ToEnumerable())
                 {
-                    while (reader.Read())
-                    {
-                        UserComboBox.Items.Add(reader["username"].ToString());
-                    }
+                    UserComboBox.Items.Add(document.GetValue("username").AsString);
                 }
             }
         }
