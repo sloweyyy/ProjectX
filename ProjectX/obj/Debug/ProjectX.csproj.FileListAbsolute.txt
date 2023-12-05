@@ -166,3 +166,5 @@ D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\RegisterWindow
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\MainWindow.baml
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\DeepfakeDetect.baml
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\DeepfakeDetect.g.cs
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\OCR.baml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\OCR.g.cs

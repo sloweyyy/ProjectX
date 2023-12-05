@@ -8,6 +8,9 @@
         ResizeMode="NoResize">
 
     <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+        <Image Source="../assets/Logo.png" Height="52" Width="140"/>
+
         <Label Content="Deepfake Detection" FontWeight="Bold" FontSize="24" Margin="0,0,0,20"
                HorizontalAlignment="Center"/>
 
