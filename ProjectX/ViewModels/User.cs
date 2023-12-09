@@ -11,7 +11,10 @@ namespace ProjectX.Views
 
         public string username { get; set; }
         public string password { get; set; }
-        public string apikey { get; set; }
+        public string zaloapi { get; set; }
+
+        public string fptapi { get; set; }
+
         public bool __v { get; set; }
     }
 }

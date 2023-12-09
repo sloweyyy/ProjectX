@@ -38,7 +38,7 @@ namespace ProjectX.Views
             return count > 0;
         }
 
-        private bool Register(string username, string apiKey, string password)
+        private bool Register(string username, string zaloapi, string fptapi, string password)
         {
             var usersCollection = _database.GetCollection<BsonDocument>("users");
 
@@ -47,9 +47,11 @@ namespace ProjectX.Views
             var document = new BsonDocument
             {
                 { "username", username },
-                { "apikey", apiKey },
+                { "zaloapi", zaloapi },
+                { "fptapi", fptapi },
                 { "password", hashedPassword }
             };
+
 
             try
             {
@@ -66,10 +68,11 @@ namespace ProjectX.Views
         private async void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
             string username = UsernameTextBox.Text;
-            string apiKey = ApiKeyTextBox.Text;
+            string zaloapi = ZaloAI.Text;
+            string fptapi = FPTAI.Text;
             string password = PasswordBox.Password;
 
-            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(apiKey) && !string.IsNullOrEmpty(password))
+            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(zaloapi) && !string.IsNullOrEmpty(password))
             {
                 if (CheckUsername(username))
                 {
@@ -77,14 +80,22 @@ namespace ProjectX.Views
                 }
                 else
                 {
-                    bool isKeyValid = await CheckKeyAsync(apiKey);
-                    if (!isKeyValid)
+                    bool isZaloKeyValid = await CheckZaloKeyAsync(zaloapi);
+                    bool isFPTKeyValid = await CheckFPTKeyAsync(fptapi);
+
+                    if (!isZaloKeyValid)
                     {
-                        MessageBox.Show("API Key không hợp lệ.");
+                        MessageBox.Show("API Key Zalo không hợp lệ.");
                         return;
                     }
 
-                    if (Register(username, apiKey, password))
+                    if (!isFPTKeyValid)
+                    {
+                        MessageBox.Show("API Key FPT không hợp lệ.");
+                        return;
+                    }
+
+                    if (Register(username, zaloapi, fptapi, password))
                     {
                         MessageBox.Show("Đăng ký thành công.");
                         LoginWindow loginWindow = new LoginWindow();
@@ -104,6 +115,7 @@ namespace ProjectX.Views
         }
 
 
+
         private void BackToLoginButton_Click(object sender, RoutedEventArgs e)
         {
             LoginWindow loginWindow = new LoginWindow();
@@ -111,11 +123,28 @@ namespace ProjectX.Views
             this.Close();
         }
 
-        private async Task<bool> CheckKeyAsync(string key)
+        private async Task<bool> CheckZaloKeyAsync(string key)
         {
             var client = new RestClient("https://api.zalo.ai/v1/tts/synthesize");
             var request = new RestRequest(Method.POST);
             request.AddHeader("apikey", key);
+            request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
+
+            var response = await client.ExecuteAsync(request);
+
+            if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        private async Task<bool> CheckFPTKeyAsync(string key)
+        {
+            var client = new RestClient("https://api.fpt.ai/dmp/checklive/v2");
+            var request = new RestRequest(Method.POST);
+            request.AddHeader("api-key", key);
             request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
 
             var response = await client.ExecuteAsync(request);

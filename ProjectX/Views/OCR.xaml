@@ -12,7 +12,7 @@
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button x:Name="BtnOpenFile" Content="Open File" Click="BtnOpenFile_Click" 
                     Background="#202123" Foreground="White" 
-                    BorderBrush="#4285f4" Width="200" Height="24" Margin="10"/>
+                    BorderBrush="#4285f4" Width="200" Height="34" Margin="10"/>
             <TextBox x:Name="TextContent" 
          Width="538" Height="241" 
          HorizontalAlignment="Left" 

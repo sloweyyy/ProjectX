@@ -6,29 +6,32 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.Windows;
+using MongoDB.Bson;
+using MongoDB.Driver;
 
 namespace ProjectX.Views
 {
     public partial class DeepfakeDetect : Window
     {
-        private string apiKey = "oZ4gD7H2zpD5YK6WynunecuXKQSCbxnj";
+        private string apiKey;
         private string videoFilePath;
         private string imageFilePath;
+        private readonly IMongoCollection<User> _usersCollection;
 
-        public DeepfakeDetect()
+        public DeepfakeDetect(string username)
         {
             InitializeComponent();
+            _usersCollection = GetUsersCollection();
+            apiKey = GetApiKeyByUsername(username);
         }
 
         private void UploadVideo_Click(object sender, RoutedEventArgs e)
         {
-            // Open file dialog
             var dialog = new System.Windows.Forms.OpenFileDialog();
             dialog.Filter = "Video files (*.mp4)|*.mp4";
             dialog.Multiselect = false;
             var result = dialog.ShowDialog();
 
-            // Get the selected file path
             if (result == System.Windows.Forms.DialogResult.OK)
             {
                 videoFilePath = dialog.FileName;
@@ -37,6 +40,19 @@ namespace ProjectX.Views
 
 
         }
+
+        private IMongoCollection<User> GetUsersCollection()
+        {
+            string connectionString =
+                "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/";
+            string databaseName = "ProjectX";
+            string collectionName = "users";
+
+            var client = new MongoClient(connectionString);
+            var database = client.GetDatabase(databaseName);
+            return database.GetCollection<User>(collectionName);
+        }
+
 
         private void UploadImage_Click(object sender, RoutedEventArgs e)
         {
@@ -117,6 +133,21 @@ namespace ProjectX.Views
             // Additional fields can be added as needed
 
             return resultBuilder.ToString();
+        }
+
+        private string GetApiKeyByUsername(string username)
+        {
+           
+
+            var filter = Builders<User>.Filter.Eq(u => u.username, username);
+            var user = _usersCollection.Find(filter).FirstOrDefault();
+
+            if (user != null)
+            {
+                return user.fptapi;
+            }
+
+            return null;
         }
 
     }
