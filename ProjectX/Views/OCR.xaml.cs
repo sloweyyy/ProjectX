@@ -52,5 +52,16 @@ namespace ProjectX.Views
         {
             CharCountLabel.Content = "Characters: " + TextContent.Text.Length;
         }
+
+        private void BtnDownloadFile_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Text file (*.txt)|*.txt";
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                File.WriteAllText(saveFileDialog.FileName, TextContent.Text);
+            }
+
+        }
     }
 }

@@ -7,10 +7,21 @@
         Icon="../assets/AppIcon.ico"
         ResizeMode="NoResize">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Menu -->
+        <Menu Grid.Row="0" HorizontalAlignment="Left" Grid.RowSpan="2">
+            <MenuItem Header="File">
+                <MenuItem Header="Logout" Click="Logout_Click"/>
+                <MenuItem Header="Exit" Click="Exit_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Logo and Buttons -->
         <Image Source="../assets/Logo.png" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Height="107" Width="288"/>
-
-      
-
         <UniformGrid Rows="3" Columns="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,141,0,0" Height="463" Width="1209">
             <Button Background="#202025" Foreground="White" Width="100" Height="100" BorderBrush="Aqua" Click="TTS_Click">
                 <StackPanel>
@@ -36,7 +47,6 @@
                     <TextBlock Text="Deepfake Detect" Margin="5" TextWrapping="Wrap"/>
                 </StackPanel>
             </Button>
-
         </UniformGrid>
     </Grid>
 </Window>

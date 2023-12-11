@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using System.Windows.Media.Imaging;
 
 namespace ProjectX.Views
 {
@@ -25,6 +26,24 @@ namespace ProjectX.Views
             apiKey = GetApiKeyByUsername(username);
         }
 
+        private void UpdateVideoView(string videoFilePath)
+        {
+            VideoPlayer.Source = new Uri(videoFilePath);
+            VideoPlayer.Visibility = Visibility.Visible;
+        }
+
+        private void UpdateImageView(string imageFilePath)
+        {
+            ImageView.Source = new BitmapImage(new Uri(imageFilePath));
+            ImageView.Visibility = Visibility.Visible;
+        }
+
+        private void ResetViews()
+        {
+            //VideoPlayer.Visibility = Visibility.Hidden;
+            //ImageView.Visibility = Visibility.Hidden;
+        }
+
         private void UploadVideo_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new System.Windows.Forms.OpenFileDialog();
@@ -36,10 +55,33 @@ namespace ProjectX.Views
             {
                 videoFilePath = dialog.FileName;
                 VideoFileName.Text = $"Video file: {videoFilePath}";
+
+                // Update video view
+                UpdateVideoView(videoFilePath);
+
+                // Reset image view
             }
-
-
         }
+
+        private void UploadImage_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new System.Windows.Forms.OpenFileDialog();
+            dialog.Filter = "Image files (*.jpg, *.png)|*.jpg;*.png";
+            dialog.Multiselect = false;
+            var result = dialog.ShowDialog();
+
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                imageFilePath = dialog.FileName;
+                ImageFileName.Text = $"Image file: {imageFilePath}";
+
+                // Update image view
+                UpdateImageView(imageFilePath);
+
+                // Reset video view
+            }
+        }
+
 
         private IMongoCollection<User> GetUsersCollection()
         {
@@ -52,25 +94,6 @@ namespace ProjectX.Views
             var database = client.GetDatabase(databaseName);
             return database.GetCollection<User>(collectionName);
         }
-
-
-        private void UploadImage_Click(object sender, RoutedEventArgs e)
-        {
-
-            // Open file dialog
-            var dialog = new System.Windows.Forms.OpenFileDialog();
-            dialog.Filter = "Image files (*.jpg, *.png)|*.jpg;*.png";
-            dialog.Multiselect = false;
-            var result = dialog.ShowDialog();
-
-            // Get the selected file path
-            if (result == System.Windows.Forms.DialogResult.OK)
-            {
-                imageFilePath = dialog.FileName;
-                ImageFileName.Text = $"Image file: {imageFilePath}";
-            }
-        }
-
         private async void StartDetection_Click(object sender, RoutedEventArgs e)
         {
             var result = await DetectDeepfake();
@@ -92,28 +115,35 @@ namespace ProjectX.Views
             var response = await client.PostAsync(url, content);
             var responseString = await response.Content.ReadAsStringAsync();
 
-            // Parse the JSON response
             var jsonResponse = JsonConvert.DeserializeObject<dynamic>(responseString);
 
-            // Construct a user-friendly message
             return InterpretResponse(jsonResponse);
         }
 
         private string InterpretResponse(dynamic response)
         {
-            // Check for error codes
+            var resultBuilder = new StringBuilder();
+
             if (response.code != "200")
             {
-                return $"Error: {response.message} (Code: {response.code})";
+                resultBuilder.AppendLine($"Error: {response.message} (Code: {response.code})");
+                if (response.data != null)
+                {
+                    resultBuilder.AppendLine($"Data: {response.data}");
+                }
+                return resultBuilder.ToString();
             }
 
-            // Build the result string
-            var resultBuilder = new StringBuilder();
             resultBuilder.AppendLine($"Detection result: {response.message}");
 
             if (response.is_live != null)
             {
                 resultBuilder.AppendLine($"Live: {response.is_live} (Probability: {response.prob})");
+            }
+
+            if (response.need_to_review != null)
+            {
+                resultBuilder.AppendLine($"Need to review: {response.need_to_review}");
             }
 
             if (response.is_deepfake != null)
@@ -130,14 +160,12 @@ namespace ProjectX.Views
                 resultBuilder.AppendLine($"Face Match Error: {response.face_match_error.data}");
             }
 
-            // Additional fields can be added as needed
-
             return resultBuilder.ToString();
         }
 
         private string GetApiKeyByUsername(string username)
         {
-           
+
 
             var filter = Builders<User>.Filter.Eq(u => u.username, username);
             var user = _usersCollection.Find(filter).FirstOrDefault();
@@ -149,6 +177,8 @@ namespace ProjectX.Views
 
             return null;
         }
+
+        // update video and image view 
 
     }
 }

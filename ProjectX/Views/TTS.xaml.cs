@@ -8,6 +8,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using MessageBox = System.Windows.MessageBox;
@@ -110,24 +111,37 @@ namespace ProjectX.Views
             }
         }
 
+        private CancellationTokenSource cancellationTokenSource;
+
         private void UpdateUI()
         {
             string textPre = "";
-            while (true)
+            cancellationTokenSource = new CancellationTokenSource();
+
+            Task.Run(() =>
             {
-                this.Dispatcher.Invoke(() =>
+                while (!cancellationTokenSource.Token.IsCancellationRequested)
                 {
-
-                    if (_text.Text != textPre)
+                    this.Dispatcher.Invoke(() =>
                     {
-                        _kytu.Content = "Ký tự đã nhập: " + _text.Text.Length.ToString();
-                        textPre = _text.Text;
-
-                    }
-                });
-                Thread.Sleep(200);
-            }
+                        if (_text.Text != textPre)
+                        {
+                            _kytu.Content = "Ký tự đã nhập: " + _text.Text.Length.ToString();
+                            textPre = _text.Text;
+                        }
+                    });
+                    Thread.Sleep(200);
+                }
+            }, cancellationTokenSource.Token);
         }
+
+        private void StopUpdate()
+        {
+            cancellationTokenSource?.Cancel();
+            cancellationTokenSource?.Dispose();
+            cancellationTokenSource = null;
+        }
+
         private bool CheckKey(string key)
         {
             if (keylone == key)

@@ -9,7 +9,7 @@ namespace ProjectX.Views
     public partial class LoginWindow : Window
     {
         private readonly IMongoCollection<User> _usersCollection;
-        private string version = File.ReadAllText("..\\..\\version.txt");
+        private string currentVersion = File.ReadAllText("..\\..\\version.txt");
         public LoginWindow()
         {
             InitializeComponent();
@@ -88,7 +88,7 @@ namespace ProjectX.Views
 
             var request = new RestRequest(Method.GET);
             IRestResponse response = client.Execute(request);
-            if (!response.Content.Contains(version))
+            if (!response.Content.Contains(currentVersion))
             {
                 MessageBox.Show("Đã có phiên bản mới. Hãy cập nhật nhé!");
                 System.Diagnostics.Process.Start("https://github.com/sloweyyy/IT008.O12/releases");
@@ -96,6 +96,14 @@ namespace ProjectX.Views
 
 
 
+        }
+
+        private void PasswordBox_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == System.Windows.Input.Key.Enter)
+            {
+                CheckLogin_Click(sender, e);
+            }
         }
 
 

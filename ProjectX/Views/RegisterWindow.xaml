@@ -1,44 +1,29 @@
 ﻿<Window x:Class="ProjectX.Views.RegisterWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Register" Height="411" Width="325"
+        Title="Đăng ký" Height="428" Width="400"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
         Background="#202025" Icon="../assets/AppIcon.ico">
-    <Grid Margin="10">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
+    <StackPanel Orientation="Vertical" Margin="10">
+        <Label Content="Đăng ký" FontWeight="Bold" FontSize="20" VerticalAlignment="Center"
+               HorizontalAlignment="Center" Foreground="White"/>
 
-        <Label Content="Đăng ký" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"
-               FontWeight="Bold" Foreground="White" />
-        <Label Content="Username:" Grid.Row="1" VerticalAlignment="Center" />
-        <TextBox x:Name="UsernameTextBox" Grid.Row="2" Margin="0,5" VerticalAlignment="Center" Foreground="#d8d9de" />
+        <Label Content="Username:" Margin="30,0,30,10" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="UsernameTextBox" Margin="30,0,30,10" Foreground="#d8d9de" Width="300" HorizontalAlignment="Left"/>
 
-        <Label Content="Password:" Grid.Row="3" VerticalAlignment="Center" />
-        <PasswordBox x:Name="PasswordBox" Grid.Row="4" Margin="0,5" VerticalAlignment="Center" Foreground="#d8d9de" />
+        <Label Content="Password:" Margin="30,0,30,0" FontWeight="Bold" Foreground="White"/>
+        <PasswordBox x:Name="PasswordBox" Margin="30,0,30,10" PasswordChar="*" Foreground="#d8d9de" Width="300"/>
 
-        <Label Content="ZaloAI API Key:" Grid.Row="5" VerticalAlignment="Center" />
-        <TextBox Name="ZaloAI" Grid.Row="6" Margin="0,5,0,0" VerticalAlignment="Top" Foreground="#d8d9de" />
+        <Label Content="ZaloAI API Key:" Margin="30,0,30,0" FontWeight="Bold" Foreground="White"/>
+        <TextBox Name="ZaloAI" Margin="30,0,30,10" Foreground="#d8d9de" Width="300"/>
 
-        <Label Content="FPTAI API Key:" Grid.Row="7" VerticalAlignment="Center" />
-        <TextBox Name="FPTAI" Grid.Row="8" Margin="0,5,0,0" VerticalAlignment="Top" Foreground="#d8d9de" />
+        <Label Content="FPTAI API Key:" Margin="30,0,30,0" FontWeight="Bold" Foreground="White"/>
+        <TextBox Name="FPTAI" Margin="30,0,30,10" Foreground="#d8d9de" Width="300"/>
 
-        <Button Content="Đăng ký" Grid.Row="8" Click="RegisterButton_Click" VerticalAlignment="Center"
-                HorizontalAlignment="Center" Width="280" Background="#202123" BorderBrush="#ea4335"
-                HorizontalContentAlignment="Center" />
-        <Button Content="Đăng nhập" Grid.Row="8" Click="BackToLoginButton_Click" Margin="0,95,0,0"
-                VerticalAlignment="Top"
-                HorizontalAlignment="Center" Width="280" Background="#202123" BorderBrush="#4285f4"
-                HorizontalContentAlignment="Center" />
-
-    </Grid>
+        <Button Content="Đăng ký" Click="RegisterButton_Click" Background="#202123" Margin="30,0,30,10"
+                BorderBrush="#ea4335" Width="300"/>
+        <Button Content="Đăng nhập" Click="BackToLoginButton_Click" Background="#202123" Margin="30,0,30,10"
+                BorderBrush="#4285f4" Width="300"/>
+    </StackPanel>
 </Window>
