@@ -22,31 +22,27 @@
 
         <!-- Logo and Buttons -->
         <Image Source="../assets/Logo.png" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Height="107" Width="288"/>
-        <UniformGrid Rows="3" Columns="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,141,0,0" Height="463" Width="1209">
-            <Button Background="#202025" Foreground="White" Width="100" Height="100" BorderBrush="Aqua" Click="TTS_Click">
-                <StackPanel>
-                    <Image Source="/assets/button/tts.png" Height="40"/>
-                    <TextBlock Text="Text-to-speech" Margin="5" TextWrapping="Wrap"/>
-                </StackPanel>
-            </Button>
-            <Button Background="#202025" Foreground="White" Width="100" Height="100" BorderBrush="Aqua" Click="OCR_Click">
-                <StackPanel>
-                    <Image Source="/assets/button/OCR.png" Height="40"/>
-                    <TextBlock Text="OCR" Margin="5" TextWrapping="Wrap"/>
-                </StackPanel>
-            </Button>
-            <Button  Background="#202025" Foreground="White" Width="100" Height="100" BorderBrush="Aqua" Click="DeepfakeDetect_Click">
-                <StackPanel>
-                    <Image Source="/assets/button/deepfake.png" Height="40"/>
-                    <TextBlock Text="Deepfake Detect" Margin="5" TextWrapping="Wrap"/>
-                </StackPanel>
-            </Button>
-            <Button  Background="#202025" Foreground="White" Width="100" Height="100" BorderBrush="Aqua" Click="DeepfakeDetect_Click">
-                <StackPanel>
-                    <Image Source="/assets/button/deepfake.png" Height="40"/>
-                    <TextBlock Text="Deepfake Detect" Margin="5" TextWrapping="Wrap"/>
-                </StackPanel>
-            </Button>
+        <UniformGrid Rows="3" Columns="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="56,141,0,0" Height="463" Width="1224">
+            <Grid Height="NaN" Margin="257,27,-663,27" Width="NaN">
+                <Button Background="#202025" Foreground="White" Width="100" Height="100" BorderBrush="Aqua" Click="TTS_Click" Margin="0,0,605,0">
+                    <StackPanel>
+                        <Image Source="/assets/button/tts.png" Height="40"/>
+                        <TextBlock Text="Text-to-speech" Margin="5" TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Button>
+                <Button Background="#202025" Foreground="White" Width="100" Height="100" BorderBrush="Aqua" Click="OCR_Click" Margin="302,0,303,0">
+                    <StackPanel>
+                        <Image Source="/assets/button/OCR.png" Height="40"/>
+                        <TextBlock Text="OCR" Margin="5" TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Button>
+                <Button  Background="#202025" Foreground="White" Width="100" Height="100" BorderBrush="Aqua" Click="DeepfakeDetect_Click" Margin="604,0,1,0">
+                    <StackPanel>
+                        <Image Source="/assets/button/deepfake.png" Height="40"/>
+                        <TextBlock Text="Deepfake Detect" Margin="5" TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
         </UniformGrid>
     </Grid>
 </Window>
