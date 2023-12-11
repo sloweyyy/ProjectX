@@ -398,3 +398,4 @@ FodyWeavers.xsd
 *.sln.iml
 *.cache
 *.pdb
+.vs/ProjectX/v17/.suo
