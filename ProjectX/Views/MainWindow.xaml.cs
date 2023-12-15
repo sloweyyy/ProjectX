@@ -3,6 +3,9 @@ using System.Windows.Forms;
 using ProjectX.Views;
 using Application = System.Windows.Application;
 using System;
+using System.IO;
+using RestSharp;
+using MessageBox = System.Windows.MessageBox;
 
 namespace ProjectX
 {
@@ -13,6 +16,7 @@ namespace ProjectX
 
     public partial class MainWindow
     {
+        private string currentVersion = File.ReadAllText("..\\..\\version.txt");
         private string _username;
 
         public MainWindow(string username)
@@ -80,7 +84,31 @@ namespace ProjectX
                 about.Show();
             }
         }
+        private void UpdateButton_Click(object sender, RoutedEventArgs e)
+        {
+            var client = new RestClient("https://raw.githubusercontent.com/sloweyyy/IT008.O12/main/ProjectX/version.txt");
 
+            var request = new RestRequest(Method.GET);
+            IRestResponse response = client.Execute(request);
+            if (!response.Content.Contains(currentVersion))
+            {
+                MessageBox.Show("Đã có phiên bản mới. Hãy cập nhật nhé!");
+                System.Diagnostics.Process.Start("https://github.com/sloweyyy/IT008.O12/releases");
+            }
+            else
+            {
+                MessageBox.Show("Bạn đang sử dụng phiên bản mới nhất.");
+            }
+        }
+
+        private void TermCondition_Click(object sender, RoutedEventArgs e)
+        {
+            if (!IsWindowOpen(typeof(TermsandCondition)))
+            {
+                TermsandCondition termCondition = new TermsandCondition();
+                termCondition.Show();
+            }
+        }
 
     }
 }

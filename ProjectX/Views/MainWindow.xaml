@@ -9,18 +9,21 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Menu -->
-        <Menu Grid.Row="0" HorizontalAlignment="Left" Grid.RowSpan="2"  >
 
-            <MenuItem Header="File">
+        <!-- Menu -->
+        <Menu Grid.Row="0" HorizontalAlignment="Left" Grid.RowSpan="2" Width="1270" Background="Transparent" >
+
+            <MenuItem Header="File" Width="100" VerticalContentAlignment="Center" Padding="38,0,0,0">
                 <MenuItem Header="Logout" Click="Logout_Click"/>
                 <MenuItem Header="Exit" Click="Exit_Click"/>
             </MenuItem>
-            <MenuItem Header="Help">
+            <MenuItem Header="Help"  Width="100" Padding="34,0,0,0">
                 <MenuItem Header="About" Click="About_Click"/>
+                <MenuItem Header="Check for updates" Click="UpdateButton_Click" />
+                <MenuItem Header="Terms and Condition" Click="TermCondition_Click"/>
             </MenuItem>
         </Menu>
 
@@ -50,3 +53,5 @@
         </UniformGrid>
     </Grid>
 </Window>
+
+    

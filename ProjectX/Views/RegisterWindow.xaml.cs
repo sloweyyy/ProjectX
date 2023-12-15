@@ -38,6 +38,8 @@ namespace ProjectX.Views
             return count > 0;
         }
 
+
+
         private bool Register(string username, string zaloapi, string fptapi, string password)
         {
             var usersCollection = _database.GetCollection<BsonDocument>("users");
