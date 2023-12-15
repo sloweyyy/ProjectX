@@ -1,4 +1,5 @@
-﻿using IronOcr;
+﻿using System;
+using IronOcr;
 using Microsoft.Win32;
 using System.IO;
 using System.Text;

@@ -337,3 +337,9 @@ D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.cs
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.csproj.CopyComplete
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.exe
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.pdb
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\ProjectX.exe.manifest
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\ProjectX.application
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.exe.manifest
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.application
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\About.baml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\About.g.cs

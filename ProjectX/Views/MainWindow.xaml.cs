@@ -72,6 +72,15 @@ namespace ProjectX
             this.Close();
         }
 
+        private void About_Click(object sender, RoutedEventArgs e)
+        {
+            if (!IsWindowOpen(typeof(About)))
+            {   
+                About about = new About();
+                about.Show();
+            }
+        }
+
 
     }
 }

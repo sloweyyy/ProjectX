@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using System;
+using MongoDB.Driver;
 using System.Windows.Controls;
 using System.Windows;
 using RestSharp;
@@ -12,22 +13,36 @@ namespace ProjectX.Views
         private string currentVersion = File.ReadAllText("..\\..\\version.txt");
         public LoginWindow()
         {
-            InitializeComponent();
-            _usersCollection = GetMongoCollection(); 
-            Loaded += Window_Loaded;
+            try
+            {
+                InitializeComponent();
+                _usersCollection = GetMongoCollection();
+                Loaded += Window_Loaded;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
         }
+
 
         private IMongoCollection<User> GetMongoCollection()
         {
-            string connectionString =
-                "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/"; 
-            string databaseName = "ProjectX"; 
+            string connectionString = "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/";
+            string databaseName = "ProjectX";
 
             var client = new MongoClient(connectionString);
             var database = client.GetDatabase(databaseName);
 
             return database.GetCollection<User>("users");
         }
+
+        private User GetUser(string username)
+        {
+            var filter = Builders<User>.Filter.Eq(u => u.username, username);
+            return _usersCollection.Find(filter).FirstOrDefault();
+        }
+
 
         private void CheckLogin_Click(object sender, RoutedEventArgs e)
         {
@@ -62,11 +77,8 @@ namespace ProjectX.Views
             }
         }
 
-        private User GetUser(string username)
-        {
-            var filter = Builders<User>.Filter.Eq(u => u.username, username);
-            return _usersCollection.Find(filter).FirstOrDefault();
-        }
+
+
 
         private bool VerifyPassword(string enteredPassword, string storedPasswordHash)
         {
