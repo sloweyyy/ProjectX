@@ -4,7 +4,8 @@
   </a>
 </div>
 
-#
+# ỨNG DỤNG ĐA CHỨC NĂNG CHO NGƯỜI VIỆT - PROJECTX
+ProjectX là một ứng dụng hoạt động đa nền tảng, tích hợp nhiều công cụ tiện ích, đa dạng và hiệu quả
 <!-- Badge -->
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white)
