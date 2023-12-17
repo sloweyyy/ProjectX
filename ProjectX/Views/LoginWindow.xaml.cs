@@ -61,6 +61,7 @@ namespace ProjectX.Views
 
                 if (VerifyPassword(enteredPassword, user.password))
                 {
+                    UpdateLastUsed(selectedUsername);
                     MainWindow mainWindow = new MainWindow(selectedUsername);
                     mainWindow.Show();
 
@@ -75,6 +76,14 @@ namespace ProjectX.Views
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
             }
+        }
+
+        private void UpdateLastUsed(string username)
+        {
+            var filter = Builders<User>.Filter.Eq(u => u.username, username);
+            var update = Builders<User>.Update.Set(u => u.last_used_at, DateTime.Now);
+
+            _usersCollection.UpdateOne(filter, update);
         }
 
 

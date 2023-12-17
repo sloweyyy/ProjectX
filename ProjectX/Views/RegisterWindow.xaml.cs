@@ -45,15 +45,17 @@ namespace ProjectX.Views
             var usersCollection = _database.GetCollection<BsonDocument>("users");
 
             string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
+            DateTime currentTimestamp = DateTime.Now;
 
             var document = new BsonDocument
             {
                 { "username", username },
                 { "zaloapi", zaloapi },
                 { "fptapi", fptapi },
-                { "password", hashedPassword }
+                { "password", hashedPassword },
+                { "created_at", currentTimestamp },
+                { "last_used_at", currentTimestamp }
             };
-
 
             try
             {

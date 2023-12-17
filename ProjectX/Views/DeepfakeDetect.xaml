@@ -8,8 +8,18 @@
         ResizeMode="NoResize">
 
     <Grid>
-        <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
+        <!-- StackPanel for buttons and labels -->
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Vertical" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Image Source="../assets/Logo.png" Height="52" Width="140"/>
 
             <Label Content="Deepfake Detection" FontWeight="Bold" FontSize="24" Margin="0,0,0,20"
@@ -29,10 +39,11 @@
             <TextBlock x:Name="ResultText" Margin="30,20,30,0" FontSize="16" TextWrapping="Wrap" Foreground="#d8d9de"/>
         </StackPanel>
 
+
         <!-- MediaElement for Video -->
-        <MediaElement x:Name="VideoPlayer" Width="259" Height="480" Visibility="Collapsed " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,48,0,0" />
+        <MediaElement x:Name="VideoPlayer" Grid.Row="1" Grid.Column="0" Margin="10" />
 
         <!-- Image Control for Image -->
-        <Image x:Name="ImageView" Width="259" Height="480" Visibility="Collapsed" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="515,48,0,0"  />
+        <Image x:Name="ImageView" Grid.Row="1" Grid.Column="1" Margin="10" />
     </Grid>
 </Window>

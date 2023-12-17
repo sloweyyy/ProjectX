@@ -71,6 +71,16 @@ namespace ProjectX.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] level_bond_408406_6b79f27d6629 {
+            get {
+                object obj = ResourceManager.GetObject("level_bond_408406_6b79f27d6629", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon Logo {
