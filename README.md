@@ -12,7 +12,9 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
+# ỨNG DỤNG ĐA CHỨC NĂNG CHO NGƯỜI VIỆT - PROJECTX
 
+ProjectX là một ứng dụng hoạt động đa nền tảng, tích hợp nhiều công cụ tiện ích, đa dạng và hiệu quả
 
 # Thông tin Môn học
 <table>
