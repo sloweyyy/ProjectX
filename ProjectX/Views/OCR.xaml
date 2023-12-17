@@ -8,7 +8,7 @@
 
     <Grid Margin="0,0,0,147">
         <Image Source="../assets/Logo.png" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" Height="37" Width="140"/>
-        <Label Content="OCR" FontWeight="Bold" FontSize="24" Margin="0,52,0,0"
+        <Label Content="Translator" FontWeight="Bold" FontSize="24" Margin="0,52,0,0"
                HorizontalAlignment="Center" Foreground="White" Height="53" VerticalAlignment="Top"/>
         <StackPanel HorizontalAlignment="Center" Margin="0,104,0,-142">
 
@@ -16,7 +16,6 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
-                    <!-- Add more RowDefinitions if needed -->
                 </Grid.RowDefinitions>
 
                 <TextBox x:Name="TextContent" 
@@ -137,8 +136,6 @@
                     <ComboBoxItem Content="Yiddish"/>
                     <ComboBoxItem Content="Yoruba"/>
                     <ComboBoxItem Content="Zulu"/>
-
-                    <!-- Add more languages as needed -->
                 </ComboBox>
                 <Button x:Name="BtnTranslate" Content="Translate" Click="BtnTranslate_Click" 
         Background="#202123" Foreground="White" 

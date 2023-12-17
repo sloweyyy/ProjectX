@@ -370,3 +370,5 @@ D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Translat
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Cloud.Translation.V2.pdb
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Cloud.Translation.V2.xml
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\Gemini.g.cs
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\Gemini.baml

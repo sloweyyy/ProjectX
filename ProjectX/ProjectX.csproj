@@ -362,13 +362,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModels\RelayCommand.cs" />
     <Compile Include="ViewModels\User.cs" />
     <Compile Include="ViewModels\XuLyAmThanh.cs" />
     <Compile Include="Views\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\BotResponse.cs" />
+    <Compile Include="ViewModels\ChatMessage.cs" />
     <Compile Include="Views\DeepfakeDetect.xaml.cs">
       <DependentUpon>DeepfakeDetect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Gemini.xaml.cs">
+      <DependentUpon>Gemini.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
@@ -398,6 +404,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\DeepfakeDetect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Gemini.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -474,6 +484,7 @@
     <Resource Include="assets\button\deepfake.png" />
     <Resource Include="assets\button\ocr.png" />
     <Resource Include="assets\button\tts.png" />
+    <Resource Include="assets\button\artificial-intelligence.png" />
     <Content Include="mongocrypt.dll" />
     <Resource Include="version.txt" />
     <Resource Include="assets\AppIcon.ico" />

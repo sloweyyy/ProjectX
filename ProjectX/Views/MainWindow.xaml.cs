@@ -110,5 +110,14 @@ namespace ProjectX
             }
         }
 
+        private void Gemini_Click(object sender, RoutedEventArgs e)
+        {
+            if (!IsWindowOpen(typeof(Gemini)))
+            {
+                Gemini gemini = new Gemini();
+                gemini.Show();
+            }
+        }
+
     }
 }
