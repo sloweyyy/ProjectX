@@ -15,6 +15,7 @@
         <!-- Menu -->
         <Menu Grid.Row="0" HorizontalAlignment="Left" Grid.RowSpan="2" Width="1270" Background="Transparent" >
             <MenuItem Header="File" Width="100" VerticalContentAlignment="Center" Padding="38,0,0,0">
+                <MenuItem Header="Account" Click="Account_Click"/>
                 <MenuItem Header="Logout" Click="Logout_Click"/>
                 <MenuItem Header="Exit" Click="Exit_Click"/>
             </MenuItem>
@@ -49,7 +50,7 @@
             <Button Background="#202025" Foreground="White" Width="150" Height="150" BorderBrush="Aqua" Click="Gemini_Click" Margin="5,5,0,0">
                 <StackPanel>
                     <Image Source="/assets/button/artificial-intelligence.png" Height="60"/>
-                    <TextBlock Text="New Button" Margin="5" TextWrapping="Wrap"/>
+                    <TextBlock Text="Gemini Chat" Margin="5" TextWrapping="Wrap"/>
                 </StackPanel>
             </Button>
         </UniformGrid>

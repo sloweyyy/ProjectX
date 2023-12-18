@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:ProjectX.Views"
         mc:Ignorable="d"
         Title="GeminiAI Chat" Height="450" Width="800"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Icon="../assets/AppIcon.ico"
+        ResizeMode="NoResize">
     <Grid Background="#202025">
         <Image Source="../assets/Logo.png" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="51" Width="200"/>
         <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,61,0,45">

@@ -50,6 +50,7 @@ namespace ProjectX.Views
             var document = new BsonDocument
             {
                 { "username", username },
+                { "useraccountname", BsonNull.Value }, 
                 { "zaloapi", zaloapi },
                 { "fptapi", fptapi },
                 { "password", hashedPassword },
@@ -68,6 +69,7 @@ namespace ProjectX.Views
                 return false;
             }
         }
+
 
         private async void RegisterButton_Click(object sender, RoutedEventArgs e)
         {

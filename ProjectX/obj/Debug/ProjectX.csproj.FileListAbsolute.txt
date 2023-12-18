@@ -372,3 +372,7 @@ D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Cloud.Transla
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\Gemini.g.cs
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\Gemini.baml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\Account.baml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\ChangePasswordWindow.baml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\Account.g.cs
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\ChangePasswordWindow.g.cs

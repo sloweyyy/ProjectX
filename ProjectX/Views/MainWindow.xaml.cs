@@ -4,6 +4,7 @@ using ProjectX.Views;
 using Application = System.Windows.Application;
 using System;
 using System.IO;
+using MongoDB.Driver;
 using RestSharp;
 using MessageBox = System.Windows.MessageBox;
 
@@ -18,12 +19,35 @@ namespace ProjectX
     {
         private string currentVersion = File.ReadAllText("..\\..\\version.txt");
         private string _username;
+        private readonly IMongoDatabase _database;
+        private readonly IMongoCollection<User> usersCollection;
+
 
         public MainWindow(string username)
         {
             InitializeComponent();
             _username = username;
+            _database = GetMongoDatabase();
+            if (_database == null)
+            {
+                Console.WriteLine("Failed to connect to the database.");
+                return;
+            }
+            usersCollection = _database.GetCollection<User>("users");
+
         }
+
+        private IMongoDatabase GetMongoDatabase()
+        {
+            string connectionString =
+                "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/";
+            string databaseName = "ProjectX";
+
+            var client = new MongoClient(connectionString);
+            return client.GetDatabase(databaseName);
+        }
+
+
         private void TTS_Click(object sender, RoutedEventArgs e)
         {
 
@@ -118,6 +142,35 @@ namespace ProjectX
                 gemini.Show();
             }
         }
+
+        private void Account_Click(object sender, RoutedEventArgs e)
+        {
+            if (!IsWindowOpen(typeof(Account)))
+            {
+                // Fetch the user object based on the username
+                User currentUser = GetUserByUsername(_username);
+
+                if (currentUser != null)
+                {
+                    // Pass the user object to the Account constructor
+                    Account account = new Account(currentUser);
+                    account.Show();
+                }
+                else
+                {
+                    MessageBox.Show("User not found.");
+                }
+            }
+        }
+
+        private User GetUserByUsername(string username)
+        {
+            var filter = Builders<User>.Filter.Eq("username", username);
+            return usersCollection.Find(filter).FirstOrDefault();
+            
+        }
+
+
 
     }
 }
