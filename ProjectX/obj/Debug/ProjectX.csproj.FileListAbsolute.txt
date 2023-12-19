@@ -168,6 +168,72 @@ D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.exe
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.pdb
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\TTS.baml
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\TTS.g.cs
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\ProjectX.exe.manifest
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\ProjectX.application
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.exe.manifest
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.application
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\About.baml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\About.g.cs
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\TermsandCondition.baml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\TermsandCondition.g.cs
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.dll
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.Rest.dll
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Auth.dll
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Core.dll
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.dll
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.PlatformServices.dll
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Translate.v2.dll
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Cloud.Translation.V2.dll
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.pdb
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.xml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.Rest.pdb
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.Rest.xml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.pdb
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.xml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Auth.pdb
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Auth.xml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Core.pdb
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Core.xml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Translate.v2.pdb
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Translate.v2.xml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Cloud.Translation.V2.pdb
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Cloud.Translation.V2.xml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\Gemini.g.cs
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\Gemini.baml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\Account.baml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\ChangePasswordWindow.baml
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\Account.g.cs
+D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\ChangePasswordWindow.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.csproj.AssemblyReference.cache
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.csproj.SuggestedBindingRedirects.cache
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\About.baml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\Account.baml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\ChangePasswordWindow.baml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\DeepfakeDetect.baml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\LoginWindow.baml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\MainWindow.baml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\OCR.baml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\RegisterWindow.baml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\TermsandCondition.baml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\TTS.baml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\About.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\Account.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\ChangePasswordWindow.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\DeepfakeDetect.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\Gemini.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\LoginWindow.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\MainWindow.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\OCR.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\RegisterWindow.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\TermsandCondition.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\TTS.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\App.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX_Content.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX_MarkupCompile.cache
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX_MarkupCompile.lref
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\runtimes\win-x64\native\eng.base.traineddata
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\runtimes\win-x64\native\eng.best.traineddata
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\runtimes\win-x64\native\eng.fast.traineddata
@@ -195,6 +261,8 @@ D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\runtimes\wi
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\OcrData\Vietnamese.ocrdata
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\mongocrypt.dll
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\ProjectX.exe.config
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\ProjectX.exe.manifest
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\ProjectX.application
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\ProjectX.exe
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\ProjectX.pdb
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\AWSSDK.Core.dll
@@ -204,6 +272,15 @@ D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\BitMiracle.
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\BouncyCastle.Crypto.dll
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\DnsClient.dll
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Emgu.CV.dll
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.dll
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.Rest.dll
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Apis.Auth.dll
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Apis.Core.dll
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Apis.dll
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Apis.PlatformServices.dll
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Apis.Translate.v2.dll
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Cloud.Translation.V2.dll
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\IronOcr.dll
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\IronSoftware.Abstractions.dll
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\IronSoftware.Drawing.Common.dll
@@ -218,6 +295,7 @@ D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.E
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.Configuration.dll
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
@@ -265,6 +343,20 @@ D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\BCrypt.Net-
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\BitMiracle.LibTiff.NET.xml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\DnsClient.xml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Emgu.CV.xml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.pdb
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.xml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.Rest.pdb
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.Rest.xml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Apis.pdb
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Apis.xml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Apis.Auth.pdb
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Apis.Auth.xml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Apis.Core.pdb
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Apis.Core.xml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Apis.Translate.v2.pdb
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Apis.Translate.v2.xml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Cloud.Translation.V2.pdb
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Google.Cloud.Translation.V2.xml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\IronOcr.pdb
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\IronOcr.xml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\IronSoftware.Abstractions.pdb
@@ -282,6 +374,7 @@ D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.E
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
@@ -311,68 +404,14 @@ D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\System.Text
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\System.Text.Json.xml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\bin\Debug\System.ValueTuple.xml
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.csproj.AssemblyReference.cache
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.csproj.SuggestedBindingRedirects.cache
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\DeepfakeDetect.baml
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\LoginWindow.baml
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\MainWindow.baml
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\OCR.baml
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\RegisterWindow.baml
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\TTS.baml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\App.baml
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\DeepfakeDetect.g.cs
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\LoginWindow.g.cs
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\MainWindow.g.cs
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\OCR.g.cs
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\RegisterWindow.g.cs
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\TTS.g.cs
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\App.g.cs
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX_Content.g.cs
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX_MarkupCompile.cache
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX_MarkupCompile.lref
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\Gemini.baml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.g.resources
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.Properties.Resources.resources
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.csproj.GenerateResource.cache
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.csproj.CoreCompileInputs.cache
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.exe.manifest
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.application
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.csproj.CopyComplete
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.exe
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.pdb
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\ProjectX.exe.manifest
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\ProjectX.application
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.exe.manifest
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.application
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\About.baml
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\About.g.cs
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\TermsandCondition.baml
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\TermsandCondition.g.cs
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.dll
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.Rest.dll
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Auth.dll
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Auth.PlatformServices.dll
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Core.dll
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.dll
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.PlatformServices.dll
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Translate.v2.dll
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Cloud.Translation.V2.dll
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.pdb
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.xml
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.Rest.pdb
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Api.Gax.Rest.xml
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.pdb
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.xml
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Auth.pdb
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Auth.xml
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Core.pdb
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Core.xml
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Translate.v2.pdb
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Apis.Translate.v2.xml
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Cloud.Translation.V2.pdb
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Google.Cloud.Translation.V2.xml
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\Gemini.g.cs
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\Gemini.baml
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\Account.baml
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\ChangePasswordWindow.baml
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\Account.g.cs
-D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\Views\ChangePasswordWindow.g.cs
