@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 using Newtonsoft.Json;
 
@@ -56,6 +57,7 @@ namespace ProjectX.Views
 
                 // Add bot's response to the chat
                 AddMessage(botResponse, "Bot");
+
             }
             catch (Exception ex)
             {
@@ -130,11 +132,6 @@ namespace ProjectX.Views
             }
         }
 
-        
-
-
-
-
         private void AddMessage(string message, string sender)
         {
             chatMessages.Add(new ChatMessage { Message = message, Sender = sender });
@@ -143,5 +140,9 @@ namespace ProjectX.Views
             ChatListBox.ScrollIntoView(chatMessages[chatMessages.Count - 1]);
         }
 
+        private void ChatListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
