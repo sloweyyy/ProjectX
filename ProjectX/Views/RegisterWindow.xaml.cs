@@ -6,6 +6,8 @@ using BCrypt.Net;
 using RestSharp;
 using System.Windows.Controls;
 using System.Windows;
+using System.Diagnostics;
+using System.Windows.Navigation;
 
 namespace ProjectX.Views
 {
@@ -162,6 +164,13 @@ namespace ProjectX.Views
 
             return true;
         }
+        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            // Mở liên kết trong trình duyệt mặc định
+            Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
 
+            // Ngăn chặn chuyển hướng trong Hyperlink
+            e.Handled = true;
+        }
     }
 }
