@@ -11,6 +11,7 @@ namespace ProjectX.Views
     {
         private readonly IMongoCollection<User> _usersCollection;
         private string currentVersion = File.ReadAllText("..\\..\\version.txt");
+
         public LoginWindow()
         {
             try
@@ -18,6 +19,8 @@ namespace ProjectX.Views
                 InitializeComponent();
                 _usersCollection = GetMongoCollection();
                 Loaded += Window_Loaded;
+                PasswordBox.KeyDown += PasswordBox_KeyDown;
+
             }
             catch (Exception ex)
             {
