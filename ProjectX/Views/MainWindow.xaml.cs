@@ -34,9 +34,13 @@ namespace ProjectX
                 return;
             }
             usersCollection = _database.GetCollection<User>("users");
-
+            User currentUser = GetUserByUsername(_username);
+            if (currentUser != null)
+            {
+                GeminiButton.IsEnabled = currentUser.premium;
+                GeminiButton.Opacity = currentUser.premium ? 1 : 0.5;
+            }
         }
-
         private IMongoDatabase GetMongoDatabase()
         {
             string connectionString =
@@ -61,19 +65,19 @@ namespace ProjectX
 
         private void OCR_Click(object sender, RoutedEventArgs e)
         {
-            if (!IsWindowOpen(typeof(OCR)))
+            if (!IsWindowOpen(typeof(Translator)))
             {
-                OCR ocr = new OCR();
-                ocr.Show();
+                Translator translator = new Translator();
+                translator.Show();
             }
         }
 
-        private void DeepfakeDetect_Click(object sender, RoutedEventArgs e)
+        private void FaceMatchClick(object sender, RoutedEventArgs e)
         {
-            if (!IsWindowOpen(typeof(DeepfakeDetect)))
+            if (!IsWindowOpen(typeof(FaceMatch)))
             {
-                DeepfakeDetect deepfakeDetect = new DeepfakeDetect(_username);
-                deepfakeDetect.Show();
+                FaceMatch faceMatch = new FaceMatch(_username);
+                faceMatch.Show();
             }
         }
 

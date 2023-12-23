@@ -21,7 +21,7 @@
                                     <TextBlock Text="{Binding Message}" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Center">
                                         <TextBlock.ContextMenu>
                                             <ContextMenu>
-                                                <MenuItem Header="Copy" Command="{Binding CopyCommand}" />
+                                                <MenuItem Header="Sao Chép" Command="{Binding CopyCommand}" />
                                             </ContextMenu>
                                         </TextBlock.ContextMenu>
 
@@ -53,7 +53,7 @@
 
         <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Margin="10">
             <TextBox x:Name="UserInputTextBox" Width="600" Height="25" Margin="5" Background="#202123" Foreground="White" TabIndex="0" />
-            <Button Content="Send" Width="80" Height="25" Margin="5" Click="SendMessage_Click" Background="#202123" BorderBrush="#4285f4"/>
+            <Button Content="Gửi" Width="80" Height="25" Margin="5" Click="SendMessage_Click" Background="#202123" BorderBrush="#4285f4"/>
         </StackPanel>
     </Grid>
 </Window>

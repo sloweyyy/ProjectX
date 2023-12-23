@@ -13,12 +13,12 @@ using Microsoft.Win32;
 
 namespace ProjectX.Views
 {
-    public partial class OCR : Window
+    public partial class Translator : Window
     {
         private readonly HttpClient httpClient = new HttpClient();
         private string currentLanguage;
 
-        public OCR()
+        public Translator()
         {
             InitializeComponent();
             currentLanguage = GetLanguageCodeFromComboBox();

@@ -1,7 +1,7 @@
 ﻿<Window x:Class="ProjectX.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Đăng Nhập" Height="720" Width="1280"
+        Title="Đăng Nhập" Height="720" Width="953"
         WindowStartupLocation="CenterScreen"
         Background="#202025"
         Icon="../assets/AppIcon.ico"
@@ -13,7 +13,7 @@
         </Grid.RowDefinitions>
 
         <!-- Menu -->
-        <Menu Grid.Row="0" HorizontalAlignment="Left" Grid.RowSpan="2" Width="1270" Background="Transparent" >
+        <Menu Grid.Row="0" HorizontalAlignment="Left" Width="1164" Background="Transparent" >
             <MenuItem Header="File" Width="100" VerticalContentAlignment="Center" Padding="38,0,0,0">
                 <MenuItem Header="Account" Click="Account_Click"/>
                 <MenuItem Header="Logout" Click="Logout_Click"/>
@@ -28,7 +28,7 @@
 
         <!-- Logo and Buttons -->
         <Image Source="../assets/Logo.png" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Height="107" Width="288"/>
-        <UniformGrid Rows="2" Columns="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="56,141,0,0" Height="463" Width="1224">
+        <UniformGrid Rows="2" Columns="2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,141,0,0" Height="463" Width="675">
             <Button Background="#202025" Foreground="White" Width="150" Height="150" BorderBrush="Aqua" Click="TTS_Click" Margin="0,0,5,0">
                 <StackPanel>
                     <Image Source="/assets/button/tts.png" Height="60"/>
@@ -41,13 +41,13 @@
                     <TextBlock Text="Translator" Margin="5" TextWrapping="Wrap"/>
                 </StackPanel>
             </Button>
-            <Button  Background="#202025" Foreground="White" Width="150" Height="150" BorderBrush="Aqua" Click="DeepfakeDetect_Click" Margin="0,5,5,0">
+            <Button  Background="#202025" Foreground="White" Width="150" Height="150" BorderBrush="Aqua" Click="FaceMatchClick" Margin="0,5,5,0">
                 <StackPanel>
                     <Image Source="/assets/button/deepfake.png" Height="60"/>
-                    <TextBlock Text="Deepfake Detect" Margin="5" TextWrapping="Wrap"/>
+                    <TextBlock Text="Face Match" Margin="5" TextWrapping="Wrap"/>
                 </StackPanel>
             </Button>
-            <Button Background="#202025" Foreground="White" Width="150" Height="150" BorderBrush="Aqua" Click="Gemini_Click" Margin="5,5,0,0">
+            <Button x:Name="GeminiButton" Background="#202025" Foreground="White" Width="150" Height="150" BorderBrush="Aqua" Click="Gemini_Click" Margin="5,5,0,0">
                 <StackPanel>
                     <Image Source="/assets/button/artificial-intelligence.png" Height="60"/>
                     <TextBlock Text="Gemini Chat" Margin="5" TextWrapping="Wrap"/>

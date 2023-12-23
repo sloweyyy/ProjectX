@@ -1,7 +1,7 @@
-﻿<Window x:Class="ProjectX.Views.DeepfakeDetect"
+﻿<Window x:Class="ProjectX.Views.FaceMatch"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="DeepfakeDetect" Height="600" Width="800"
+        Title="Khớp khuôn mặt" Height="600" Width="800"
         WindowStartupLocation="CenterScreen"
         Background="#202025"
         Icon="../assets/AppIcon.ico"
@@ -18,32 +18,28 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- StackPanel for buttons and labels -->
+        <!-- StackPanel chứa các nút và nhãn -->
         <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Vertical" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Image Source="../assets/Logo.png" Height="52" Width="140"/>
 
-            <Label Content="Deepfake Detection" FontWeight="Bold" FontSize="24" Margin="0,0,0,20"
+            <Label Content="Khớp khuôn mặt" FontWeight="Bold" FontSize="24" Margin="0,0,0,20"
                    HorizontalAlignment="Center"/>
 
-            <Button Content="Upload Video" Click="UploadVideo_Click" Background="#202123" Margin="30,0,30,10"
+            <Button x:Name="UploadImage1" Content="Tải lên ảnh 1" Click="UploadImage_Click" Background="#202123" Margin="30,0,30,10"
                     BorderBrush="#4285f4"/>
-            <TextBlock x:Name="VideoFileName" Margin="30,10,30,20" TextWrapping="Wrap" Text="Video file: None" Foreground="#d8d9de"/>
+            <TextBlock x:Name="ImageFileName1" Margin="30,10,30,20" TextWrapping="Wrap" Text="File ảnh: Không" Foreground="#d8d9de"/>
 
-            <Button Content="Upload Image" Click="UploadImage_Click" Background="#202123" Margin="30,0,30,10"
+            <Button x:Name="UploadImage2" Content="Tải lên ảnh 2" Click="UploadImage_Click" Background="#202123" Margin="30,0,30,10"
                     BorderBrush="#4285f4"/>
-            <TextBlock x:Name="ImageFileName" Margin="30,10,30,20" TextWrapping="Wrap" Text="Image file: None" Foreground="#d8d9de"/>
+            <TextBlock x:Name="ImageFileName2" Margin="30,10,30,20" TextWrapping="Wrap" Text="File ảnh: Không" Foreground="#d8d9de"/>
 
-            <Button Content="Start Detection" Click="StartDetection_Click" IsEnabled="True" Background="#202123" Margin="30,0,30,10"
+            <Button Content="Khớp khuôn mặt" Click="StartDetection_Click" IsEnabled="True" Background="#202123" Margin="30,0,30,10"
                     BorderBrush="#4285f4"/>
 
             <TextBlock x:Name="ResultText" Margin="30,20,30,0" FontSize="16" TextWrapping="Wrap" Foreground="#d8d9de"/>
         </StackPanel>
 
-
-        <!-- MediaElement for Video -->
-        <MediaElement x:Name="VideoPlayer" Grid.Row="1" Grid.Column="0" Margin="10" />
-
-        <!-- Image Control for Image -->
-        <Image x:Name="ImageView" Grid.Row="1" Grid.Column="1" Margin="10" />
+        <Image x:Name="ImageView1" Margin="10,11,10,10" Grid.Row="1" />
+        <Image x:Name="ImageView2" Grid.Row="1" Grid.Column="1" Margin="10" />
     </Grid>
 </Window>

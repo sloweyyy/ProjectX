@@ -7,9 +7,6 @@ namespace ProjectX.Views
 {
     public class User : INotifyPropertyChanged
     {
-       
-
-
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         private string _zaloapi;
@@ -34,7 +31,6 @@ namespace ProjectX.Views
             }
         }
 
-
         public string fptapi
         {
             get { return _fptapi; }
@@ -48,12 +44,13 @@ namespace ProjectX.Views
             }
         }
 
-
         public bool __v { get; set; }
 
         public DateTime last_used_at;
 
         public DateTime created_at;
+
+        public bool premium { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -61,7 +58,5 @@ namespace ProjectX.Views
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
-
     }
 }

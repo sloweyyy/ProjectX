@@ -18,14 +18,13 @@ namespace ProjectX.Views
             _database = GetMongoDatabase();
             if (_database == null)
             {
-                Console.WriteLine("Failed to connect to the database.");
+                Console.WriteLine("Không kết nối được với cơ sở dữ liệu.");
                 return;
             }
             usersCollection = _database.GetCollection<User>("users");
 
             DataContext = user;
         }
-
 
         private IMongoDatabase GetMongoDatabase()
         {
@@ -46,10 +45,9 @@ namespace ProjectX.Views
         {
             string newAccountName = _accountNameTextBox.Text;
 
-
             UpdateUserAccountName(newAccountName);
 
-            MessageBox.Show("Account name updated successfully!");
+            MessageBox.Show("Tên tài khoản được cập nhật thành công!");
             _accountNameTextBox.Text = newAccountName;
         }
 

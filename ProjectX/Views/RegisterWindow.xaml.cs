@@ -21,6 +21,8 @@ namespace ProjectX.Views
             _database = GetMongoDatabase();
         }
 
+
+
         private IMongoDatabase GetMongoDatabase()
         {
             string connectionString =
@@ -52,12 +54,13 @@ namespace ProjectX.Views
             var document = new BsonDocument
             {
                 { "username", username },
-                { "useraccountname", BsonNull.Value }, 
+                { "useraccountname", BsonNull.Value },
                 { "zaloapi", zaloapi },
                 { "fptapi", fptapi },
                 { "password", hashedPassword },
                 { "created_at", currentTimestamp },
-                { "last_used_at", currentTimestamp }
+                { "last_used_at", currentTimestamp },
+                { "premium", false  }
             };
 
             try
