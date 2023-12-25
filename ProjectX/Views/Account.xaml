@@ -1,0 +1,45 @@
+﻿<Window x:Class="ProjectX.Views.Account"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+        Title="Tài Khoản" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#202025" Icon="../assets/AppIcon.ico">
+    <Grid>
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+            <Label Content="Thông tin tài khoản" FontWeight="Bold" FontSize="20" VerticalAlignment="Center"
+                   HorizontalAlignment="Center" Foreground="White"/>
+
+            <Label Content="Tên tài khoản:" FontWeight="Bold" Foreground="White"/>
+            <TextBox Name="_accountNameTextBox" Text="{Binding useraccountname, Mode=TwoWay}" Foreground="#d8d9de" Margin="4,0,0,10" Width="300" HorizontalAlignment="Left"/>
+            <Button Content="Cập Nhật Tên Tài Khoản" Width="300" Height="30" Background="#202123" Foreground="White" FontFamily="Segoe UI Semibold" FontSize="12" BorderBrush="#34a853" Click="UpdateAccountNameButton_Click"/>
+
+            <Label Content="Username:" FontWeight="Bold" Foreground="White" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding username, Mode=TwoWay}" Foreground="#d8d9de" Margin="4,0,0,10" Width="300" HorizontalAlignment="Left"/>
+
+            <Label Content="ZaloAI API Key:" FontWeight="Bold" Foreground="White"/>
+            <TextBlock Text="{Binding zaloapi}" Foreground="#d8d9de" Margin="4,0,0,10" Width="300" HorizontalAlignment="Left"/>
+
+            <Label Content="FPTAI API Key:" FontWeight="Bold" Foreground="White"/>
+            <TextBlock Text="{Binding fptapi}" Foreground="#d8d9de" Margin="4,0,0,10" Width="300" HorizontalAlignment="Left"/>
+            <Label Content="Gói" FontWeight="Bold" Foreground="White"/>
+            <TextBlock Foreground="#d8d9de" Margin="4,0,0,10" Width="300" HorizontalAlignment="Left">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="Text" Value="Miễn Phí" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding premium}" Value="True">
+                                <Setter Property="Text" Value="Premium" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+            <Button Content="Đổi Mật Khẩu" Width="120" Height="30" Margin="0,10,0,0" Background="#202123" Foreground="White" FontFamily="Segoe UI Semibold" FontSize="12" BorderBrush="#34a853" Click="ChangePasswordButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

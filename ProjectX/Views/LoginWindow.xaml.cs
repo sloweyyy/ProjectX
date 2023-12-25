@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using System;
+using MongoDB.Driver;
 using System.Windows.Controls;
 using System.Windows;
 using RestSharp;
@@ -9,26 +10,42 @@ namespace ProjectX.Views
     public partial class LoginWindow : Window
     {
         private readonly IMongoCollection<User> _usersCollection;
-        private string version = File.ReadAllText("..\\..\\version.txt");
+        private string currentVersion = File.ReadAllText("..\\..\\version.txt");
+
         public LoginWindow()
         {
-            InitializeComponent();
-            _usersCollection = GetMongoCollection(); // Initialize the MongoDB collection
-            Loaded += Window_Loaded;
+            try
+            {
+                InitializeComponent();
+                _usersCollection = GetMongoCollection();
+                Loaded += Window_Loaded;
+                PasswordBox.KeyDown += PasswordBox_KeyDown;
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
         }
+
 
         private IMongoCollection<User> GetMongoCollection()
         {
-            // Set your MongoDB connection string and database name
-            string connectionString =
-                "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/"; // Update with your MongoDB server details
-            string databaseName = "ProjectX"; // Update with your database name
+            string connectionString = "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/";
+            string databaseName = "ProjectX";
 
             var client = new MongoClient(connectionString);
             var database = client.GetDatabase(databaseName);
 
             return database.GetCollection<User>("users");
         }
+
+        private User GetUser(string username)
+        {
+            var filter = Builders<User>.Filter.Eq(u => u.username, username);
+            return _usersCollection.Find(filter).FirstOrDefault();
+        }
+
 
         private void CheckLogin_Click(object sender, RoutedEventArgs e)
         {
@@ -47,19 +64,14 @@ namespace ProjectX.Views
 
                 if (VerifyPassword(enteredPassword, user.password))
                 {
-                    // Password is valid, grant access
-
-                    // You can open the main window or perform other actions here.
-                    // Open the main window
+                    UpdateLastUsed(selectedUsername);
                     MainWindow mainWindow = new MainWindow(selectedUsername);
                     mainWindow.Show();
 
-                    // Close the login window
                     this.Close();
                 }
                 else
                 {
-                    // Password is invalid
                     MessageBox.Show("Sai tên tài khoản hoặc mật khẩu.");
                 }
             }
@@ -69,11 +81,16 @@ namespace ProjectX.Views
             }
         }
 
-        private User GetUser(string username)
+        private void UpdateLastUsed(string username)
         {
             var filter = Builders<User>.Filter.Eq(u => u.username, username);
-            return _usersCollection.Find(filter).FirstOrDefault();
+            var update = Builders<User>.Update.Set(u => u.last_used_at, DateTime.Now);
+
+            _usersCollection.UpdateOne(filter, update);
         }
+
+
+
 
         private bool VerifyPassword(string enteredPassword, string storedPasswordHash)
         {
@@ -83,11 +100,9 @@ namespace ProjectX.Views
 
         private void OpenRegisterForm_Click(object sender, RoutedEventArgs e)
         {
-            // Open the register window
             RegisterWindow registerWindow = new RegisterWindow();
             registerWindow.Show();
 
-            // Close the login window
             this.Close();
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -97,7 +112,7 @@ namespace ProjectX.Views
 
             var request = new RestRequest(Method.GET);
             IRestResponse response = client.Execute(request);
-            if (!response.Content.Contains(version))
+            if (!response.Content.Contains(currentVersion))
             {
                 MessageBox.Show("Đã có phiên bản mới. Hãy cập nhật nhé!");
                 System.Diagnostics.Process.Start("https://github.com/sloweyyy/IT008.O12/releases");
@@ -105,6 +120,14 @@ namespace ProjectX.Views
 
 
 
+        }
+
+        private void PasswordBox_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == System.Windows.Input.Key.Enter)
+            {
+                CheckLogin_Click(sender, e);
+            }
         }
 
 

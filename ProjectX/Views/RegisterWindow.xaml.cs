@@ -6,6 +6,8 @@ using BCrypt.Net;
 using RestSharp;
 using System.Windows.Controls;
 using System.Windows;
+using System.Diagnostics;
+using System.Windows.Navigation;
 
 namespace ProjectX.Views
 {
@@ -16,22 +18,20 @@ namespace ProjectX.Views
         public RegisterWindow()
         {
             InitializeComponent();
-            _database = GetMongoDatabase(); // Initialize the MongoDB database connection
+            _database = GetMongoDatabase();
         }
+
+
 
         private IMongoDatabase GetMongoDatabase()
         {
-            // Set your MongoDB connection string and database name
             string connectionString =
-                "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/"; // Update with your MongoDB server details
-            string databaseName = "ProjectX"; // Update with your database name
+                "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/";
+            string databaseName = "ProjectX";
 
             var client = new MongoClient(connectionString);
             return client.GetDatabase(databaseName);
         }
-
-        // This method checks if the username is already taken.
-        // It returns true if the username is already taken, otherwise it returns false.
         private bool CheckUsername(string username)
         {
             var usersCollection = _database.GetCollection<BsonDocument>("users");
@@ -39,61 +39,74 @@ namespace ProjectX.Views
             var filter = Builders<BsonDocument>.Filter.Eq("username", username);
             var count = usersCollection.CountDocuments(filter);
 
-            return count > 0; // Username exists if count > 0
+            return count > 0;
         }
 
-        // This method registers a new user.
-        // It returns true if the registration is successful, otherwise it returns false.
-        private bool Register(string username, string apiKey, string password)
+
+
+        private bool Register(string username, string zaloapi, string fptapi, string password)
         {
             var usersCollection = _database.GetCollection<BsonDocument>("users");
 
-            // Hash the password using bcrypt
             string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
+            DateTime currentTimestamp = DateTime.Now;
 
             var document = new BsonDocument
             {
                 { "username", username },
-                { "apikey", apiKey },
-                { "password", hashedPassword }
+                { "useraccountname", BsonNull.Value },
+                { "zaloapi", zaloapi },
+                { "fptapi", fptapi },
+                { "password", hashedPassword },
+                { "created_at", currentTimestamp },
+                { "last_used_at", currentTimestamp },
+                { "premium", false  }
             };
 
             try
             {
                 usersCollection.InsertOne(document);
-                return true; // Registration successful
+                return true;
             }
             catch (Exception ex)
             {
-                // Handle any exceptions that may occur during registration
                 Console.WriteLine(ex.Message);
-                return false; // Registration failed
+                return false;
             }
         }
+
 
         private async void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
             string username = UsernameTextBox.Text;
-            string apiKey = ApiKeyTextBox.Text;
+            string zaloapi = ZaloAI.Text;
+            string fptapi = FPTAI.Text;
             string password = PasswordBox.Password;
 
-            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(apiKey) && !string.IsNullOrEmpty(password))
+            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(zaloapi) && !string.IsNullOrEmpty(password))
             {
                 if (CheckUsername(username))
                 {
-                    // Username is already taken
                     MessageBox.Show("Tên tài khoản đã tồn tại.");
                 }
                 else
                 {
-                    bool isKeyValid = await CheckKeyAsync(apiKey);
-                    if (!isKeyValid)
+                    bool isZaloKeyValid = await CheckZaloKeyAsync(zaloapi);
+                    bool isFPTKeyValid = await CheckFPTKeyAsync(fptapi);
+
+                    if (!isZaloKeyValid)
                     {
-                        MessageBox.Show("API Key không hợp lệ.");
+                        MessageBox.Show("API Key Zalo không hợp lệ.");
                         return;
                     }
 
-                    if (Register(username, apiKey, password))
+                    if (!isFPTKeyValid)
+                    {
+                        MessageBox.Show("API Key FPT không hợp lệ.");
+                        return;
+                    }
+
+                    if (Register(username, zaloapi, fptapi, password))
                     {
                         MessageBox.Show("Đăng ký thành công.");
                         LoginWindow loginWindow = new LoginWindow();
@@ -113,15 +126,15 @@ namespace ProjectX.Views
         }
 
 
+
         private void BackToLoginButton_Click(object sender, RoutedEventArgs e)
         {
-            // Close the current window and open the login window
             LoginWindow loginWindow = new LoginWindow();
             loginWindow.Show();
             this.Close();
         }
 
-        private async Task<bool> CheckKeyAsync(string key)
+        private async Task<bool> CheckZaloKeyAsync(string key)
         {
             var client = new RestClient("https://api.zalo.ai/v1/tts/synthesize");
             var request = new RestRequest(Method.POST);
@@ -138,7 +151,29 @@ namespace ProjectX.Views
             return true;
         }
 
+        private async Task<bool> CheckFPTKeyAsync(string key)
+        {
+            var client = new RestClient("https://api.fpt.ai/dmp/checklive/v2");
+            var request = new RestRequest(Method.POST);
+            request.AddHeader("api-key", key);
+            request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
 
-        
+            var response = await client.ExecuteAsync(request);
+
+            if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+            {
+                return false;
+            }
+
+            return true;
+        }
+        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            // Mở liên kết trong trình duyệt mặc định
+            Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
+
+            // Ngăn chặn chuyển hướng trong Hyperlink
+            e.Handled = true;
+        }
     }
 }

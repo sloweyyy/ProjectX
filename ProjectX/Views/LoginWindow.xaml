@@ -20,7 +20,7 @@
 
         <!-- Login and Register Buttons -->
         <Button Content="Đăng nhập" Click="CheckLogin_Click" Background="#202123" Margin="30,0,30,10"
-                BorderBrush="#4285f4" />
+                BorderBrush="#4285f4" KeyDown="PasswordBox_KeyDown"/>
         <Button Content="Đăng Ký" Click="OpenRegisterForm_Click" Background="#202123" Margin="30,0,30,10"
                 BorderBrush="#ea4335" />
 
