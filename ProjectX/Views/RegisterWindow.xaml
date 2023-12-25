@@ -1,32 +1,50 @@
 ﻿<Window x:Class="ProjectX.Views.RegisterWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Đăng ký" Height="440" Width="400"
+        Title="Đăng ký" Height="720" Width="1280"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
-        Background="#202025" Icon="../assets/AppIcon.ico">
-    <StackPanel Orientation="Vertical" Margin="10">
-        <Label Content="Đăng ký" FontWeight="Bold" FontSize="20" VerticalAlignment="Center"
-               HorizontalAlignment="Center" Foreground="White"/>
+        Background="White" Icon="../assets/AppIcon.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
 
-        <Label Content="Username:" Margin="30,0,30,10" FontWeight="Bold" Foreground="White"/>
-        <TextBox x:Name="UsernameTextBox" Margin="30,0,30,10" Foreground="#d8d9de" Width="300" HorizontalAlignment="Left"/>
+        <!-- Registration Section -->
+        <StackPanel Grid.Column="0" Orientation="Vertical" Margin="10,26,10,25">
+            <Image Source="../assets/Logo.png" HorizontalAlignment="Center" Margin="0,20,0,20" Height="54" Width="146"/>
 
-        <Label Content="Password:" Margin="30,0,30,0" FontWeight="Bold" Foreground="White"/>
-        <PasswordBox x:Name="PasswordBox" Margin="30,0,30,10" PasswordChar="*" Foreground="#d8d9de" Width="300"/>
+            <Label Content="Create Account" FontWeight="Bold" FontSize="20" VerticalAlignment="Center"
+                   HorizontalAlignment="Center" Foreground="Black" Margin="0,20,0,20" />
 
-        <Label Content="ZaloAI API Key:" Margin="30,0,30,0" FontWeight="Bold" Foreground="White"/>
-        <TextBox Name="ZaloAI" Margin="30,0,30,10" Foreground="#d8d9de" Width="300"/>
+            <Label Content="Username:" Margin="30,10,30,0" FontWeight="Bold" Foreground="Black"/>
+            <TextBox x:Name="UsernameTextBox" Margin="30,0,30,10" Foreground="Black" Background="#e8e8e8" Height="40"/>
 
-        <Label Content="FPTAI API Key:" Margin="30,0,30,0" FontWeight="Bold" Foreground="White"/>
-        <TextBox Name="FPTAI" Margin="30,0,30,10" Foreground="#d8d9de" Width="300"/>
-        <Button Content="Đăng ký" Click="RegisterButton_Click" Background="#202123" Margin="30,0,30,10"
-                BorderBrush="#ea4335" Width="300"/>
-        <Button Content="Đăng nhập" Click="BackToLoginButton_Click" Background="#202123" Margin="30,0,30,10"
-                BorderBrush="#4285f4" Width="300"/>
-        <TextBlock Margin="30,0,30,12" FontWeight="Regular" HorizontalAlignment="Center">
-            <Hyperlink NavigateUri="https://projectx-landing-page.vercel.app/api.html?fbclid=IwAR22eT3ty1ypHH94C90qSwWng7sQHLi1jbjJMTgmaOxtBi_JCyV1oMODnsc" Foreground="White" FontStyle="Italic" RequestNavigate="Hyperlink_RequestNavigate">
-                Làm sao để lấy API Key?</Hyperlink>
-        </TextBlock>
-    </StackPanel>
+            <Label Content="Password:" Margin="30,10,30,0" FontWeight="Bold" Foreground="Black"/>
+            <PasswordBox x:Name="PasswordBox" Margin="30,0,30,10" Foreground="Black" Background="#e8e8e8" Height="40"/>
+
+            <Label Content="ZaloAI API Key:" Margin="30,10,30,0" FontWeight="Bold" Foreground="Black"/>
+            <TextBox Name="ZaloAI" Margin="30,0,30,10" Foreground="Black" Background="#e8e8e8" Height="40"/>
+
+            <Label Content="FPTAI API Key:" Margin="30,10,30,0" FontWeight="Bold" Foreground="Black"/>
+            <TextBox Name="FPTAI" Margin="30,0,30,10" Foreground="Black" Background="#e8e8e8" Height="40"/>
+
+            <Button Content="Register" Click="RegisterButton_Click" Background="#4285f4" Margin="30,10" Foreground="White" Height="40"/>
+            <TextBlock Margin="30,0,30,12" FontWeight="Regular" HorizontalAlignment="Center" Foreground="Gray">
+                <Hyperlink NavigateUri="https://projectx-landing-page.vercel.app/api.html?fbclid=IwAR22eT3ty1ypHH94C90qSwWng7sQHLi1jbjJMTgmaOxtBi_JCyV1oMODnsc" FontStyle="Italic" RequestNavigate="Hyperlink_RequestNavigate">
+                    How to get API Key?</Hyperlink>
+            </TextBlock>
+        </StackPanel>
+
+        <!-- Sign In Section -->
+        <Border Grid.Column="1" Background="#4285f4" CornerRadius="10">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Chào bạn cũ trở lại!" FontWeight="Bold" FontSize="24" Foreground="White" HorizontalAlignment="Center"/>
+                <TextBlock Text="Đăng nhập để sử dụng các chức năng của chúng tôi" TextWrapping="Wrap" 
+                           FontSize="14" Foreground="White" Margin="20" HorizontalAlignment="Center"/>
+                <Button Content="Sign In" Click="BackToLoginButton_Click" Background="White" Foreground="#4285f4" Margin="20" Padding="10" Height="44"/>
+            </StackPanel>
+        </Border>
+    </Grid>
 </Window>

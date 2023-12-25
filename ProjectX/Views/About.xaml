@@ -4,31 +4,31 @@
         Title="Thông Tin" Height="431" Width="400"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
-        Background="#202025" Icon="../assets/AppIcon.ico">
+        Background="White" Icon="../assets/AppIcon.ico">
     <StackPanel Orientation="Vertical" Margin="10">
         <Label Content="Giới Thiệu" FontWeight="Bold" FontSize="20" VerticalAlignment="Center"
-               HorizontalAlignment="Center" Foreground="White"/>
+               HorizontalAlignment="Center" Foreground="Black"/>
         <Image Source="../assets/Logo.png" Height="52" Width="140"/>
 
-        <Label Content="Phiên Bản: 1.0.0" Margin="30,0,30,10" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Phiên Bản: 1.0.0" Margin="30,0,30,10" FontWeight="Bold" Foreground="Black"/>
 
-        <Label Content="Nhà Phát Triển: Đội Ngũ ProjectX" Margin="30,0,30,10" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Nhà Phát Triển: Đội Ngũ ProjectX" Margin="30,0,30,10" FontWeight="Bold" Foreground="Black"/>
 
-        <Label Content="Liên Hệ: VNUHCM - UIT" Margin="30,0,30,10" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Liên Hệ: VNUHCM - UIT" Margin="30,0,30,10" FontWeight="Bold" Foreground="Black"/>
 
-        <Label Content="Website:" Margin="30,0,30,0" FontWeight="Bold" Foreground="White"/>
-        <TextBlock Margin="35,0,30,10" Foreground="#d8d9de">
+        <Label Content="Website:" Margin="30,0,30,0" FontWeight="Bold" Foreground="Black"/>
+        <TextBlock Margin="35,0,30,10" Foreground="#4285f4">
             <Hyperlink Click="WebsiteLink_Click">https://projectx-landing-page.vercel.app/</Hyperlink>
         </TextBlock>
 
-        <Label Content="Email Hỗ Trợ:" Margin="30,0,30,0" FontWeight="Bold" Foreground="White"/>
-        <TextBlock Margin="35,0,30,10" Foreground="#d8d9de">
+        <Label Content="Email Hỗ Trợ:" Margin="30,0,30,0" FontWeight="Bold" Foreground="Black"/>
+        <TextBlock Margin="35,0,30,10" Foreground="#4285f4">
             <Hyperlink Click="EmailLink_Click">sloweycontact@gmail.com</Hyperlink>
         </TextBlock>
 
-        <Button Content="Kiểm Tra Cập Nhật" Click="UpdateButton_Click" Background="#202123" Margin="30,0,30,10"
-                BorderBrush="#ea4335" Width="300"/>
-        <Button Content="Quay Lại" Click="BackButton_Click" Background="#202123" Margin="30,0,30,10"
-                BorderBrush="#4285f4" Width="300"/>
+        <Button Content="Kiểm Tra Cập Nhật" Click="UpdateButton_Click" Background="#4285f4" Margin="30,0,30,10"
+                BorderBrush="White" Foreground="White" Width="300"/>
+        <Button Content="Quay Lại" Click="BackButton_Click" Background="#4285f4" Margin="30,0,30,10"
+                BorderBrush="White" Foreground="White" Width="300"/>
     </StackPanel>
 </Window>

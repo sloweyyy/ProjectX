@@ -39,6 +39,7 @@ namespace ProjectX
                 GeminiButton.IsEnabled = currentUser.premium;
                 GeminiButton.Opacity = currentUser.premium ? 1 : 0.5;
             }
+            DataContext = currentUser;
         }
         private IMongoDatabase GetMongoDatabase()
         {
