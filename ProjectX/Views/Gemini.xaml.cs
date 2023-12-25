@@ -140,6 +140,7 @@ namespace ProjectX.Views
             ChatListBox.ScrollIntoView(chatMessages[chatMessages.Count - 1]);
         }
 
+
         private void ChatListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 

@@ -71,7 +71,7 @@ namespace ProjectX.Views
         private async void StartDetection_Click(object sender, RoutedEventArgs e)
         {
             var result = await DetectFaceMatch();
-            ResultText.Text = $"Kết quả phát hiện: {result}";
+            MatchResultText.Text = $"Kết quả phát hiện: {result}";
         }
 
         private async Task<string> DetectFaceMatch()

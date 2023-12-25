@@ -498,6 +498,8 @@
     <Resource Include="assets\button\ocr.png" />
     <Resource Include="assets\button\tts.png" />
     <Resource Include="assets\button\artificial-intelligence.png" />
+    <Resource Include="assets\bot.png" />
+    <Resource Include="assets\send-message.png" />
     <Content Include="mongocrypt.dll" />
     <Resource Include="version.txt" />
     <Resource Include="assets\AppIcon.ico" />
