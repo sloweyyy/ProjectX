@@ -36,7 +36,7 @@
         </ComboBox>
         <!-- Button -->
         <Button x:Name="_run" Content="Đọc" HorizontalAlignment="Left" Height="26" Margin="10,131,0,0" VerticalAlignment="Top" Width="199" Click="_run_Click" Background="#202123" Foreground="White" FontFamily="Segoe UI Semibold" FontSize="12" BorderBrush="#34a853" Grid.ColumnSpan="3"/>
-        <Button x:Name="_download" Content="Download" HorizontalAlignment="Left" Height="25" Margin="10,161,0,0" VerticalAlignment="Top" Width="199" FontSize="12" Click="_download_Click" Background="#202123" BorderBrush="#4285f4" Grid.ColumnSpan="3"/>
+        <Button x:Name="_download" Content="Tải file âm thanh" HorizontalAlignment="Left" Height="25" Margin="10,161,0,0" VerticalAlignment="Top" Width="199" FontSize="12" Click="_download_Click" Background="#202123" BorderBrush="#4285f4" Grid.ColumnSpan="3"/>
         <Button x:Name="_stop" Content="Dừng" HorizontalAlignment="Left" Height="25" Margin="10,189,0,0" VerticalAlignment="Top" Width="199" Click="_stop_Click" Foreground="White" Background="#202123" FontSize="12" FontFamily="Segoe UI Semibold" BorderBrush="#ea4335" Grid.ColumnSpan="3" />
         <Button x:Name="btnOpenFile" Content="Mở file" Click="BtnOpenFile_Click" Height="26" Margin="10,215,0,0" VerticalAlignment="Top" Width="199" FontFamily="Segoe UI Semibold" FontSize="12" Background="#202123" BorderBrush="#fbbc05" HorizontalAlignment="Left" Grid.ColumnSpan="3"/>
         <!-- Textbox -->

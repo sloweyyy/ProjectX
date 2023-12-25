@@ -1,7 +1,7 @@
 ﻿<Window x:Class="ProjectX.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Đăng Nhập" Height="720" Width="953"
+        Title="Đăng Nhập" Height="720" Width="1280"
         WindowStartupLocation="CenterScreen"
         Background="#202025"
         Icon="../assets/AppIcon.ico"
@@ -12,8 +12,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Menu -->
-        <Menu Grid.Row="0" HorizontalAlignment="Left" Width="1164" Background="Transparent" >
+        <Menu Grid.Row="0" HorizontalAlignment="Left" Width="943" Background="Transparent" >
             <MenuItem Header="File" Width="100" VerticalContentAlignment="Center" Padding="38,0,0,0">
                 <MenuItem Header="Account" Click="Account_Click"/>
                 <MenuItem Header="Logout" Click="Logout_Click"/>
@@ -26,7 +25,6 @@
             </MenuItem>
         </Menu>
 
-        <!-- Logo and Buttons -->
         <Image Source="../assets/Logo.png" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Height="107" Width="288"/>
         <UniformGrid Rows="2" Columns="2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,141,0,0" Height="463" Width="675">
             <Button Background="#202025" Foreground="White" Width="150" Height="150" BorderBrush="Aqua" Click="TTS_Click" Margin="0,0,5,0">

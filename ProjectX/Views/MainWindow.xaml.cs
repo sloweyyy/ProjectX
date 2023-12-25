@@ -22,7 +22,6 @@ namespace ProjectX
         private readonly IMongoDatabase _database;
         private readonly IMongoCollection<User> usersCollection;
 
-
         public MainWindow(string username)
         {
             InitializeComponent();
