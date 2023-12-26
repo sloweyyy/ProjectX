@@ -3,21 +3,17 @@ D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.cs
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\About.baml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\Account.baml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\ChangePasswordWindow.baml
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\DeepfakeDetect.baml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\LoginWindow.baml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\MainWindow.baml
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\OCR.baml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\RegisterWindow.baml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\TermsandCondition.baml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\TTS.baml
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\About.g.cs
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\Account.g.cs
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\ChangePasswordWindow.g.cs
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\DeepfakeDetect.g.cs
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\Gemini.g.cs
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\LoginWindow.g.cs
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\MainWindow.g.cs
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\OCR.g.cs
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\RegisterWindow.g.cs
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\TermsandCondition.g.cs
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\TTS.g.cs
@@ -415,3 +411,7 @@ D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.application
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.csproj.CopyComplete
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.exe
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.pdb
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\FaceMatch.baml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\Translator.baml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\FaceMatch.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\Translator.g.cs
