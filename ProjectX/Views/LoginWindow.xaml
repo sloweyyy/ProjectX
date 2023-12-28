@@ -13,7 +13,7 @@
         </Grid.ColumnDefinitions>
 
         <!-- Login Section -->
-        <StackPanel Grid.Column="0" Orientation="Vertical" Margin="10,154,10,154">
+        <StackPanel Grid.Column="0" Orientation="Vertical" Margin="10,64,10,63">
             <Image Source="../assets/Logo.png" HorizontalAlignment="Center" Margin="0,20,0,20" Height="74" Width="201"/>
             <Label Content="Đăng Nhập" FontWeight="Bold" FontSize="20" VerticalAlignment="Center"
                    HorizontalAlignment="Center" Foreground="Black" />
@@ -30,7 +30,22 @@
 
             <!-- Login Button -->
             <Button Content="Đăng nhập" Click="CheckLogin_Click" Background="#4285f4" Margin="30,10" Foreground="White"/>
+            <!-- Forgot Password Link -->
+            <TextBlock HorizontalAlignment="Center">
+                <Hyperlink Click="ForgotPassword_Click">
+                    <TextBlock Text="Quên mật khẩu?" Foreground="Blue" TextDecorations="Underline"/>
+                </Hyperlink>
+            </TextBlock>
+            <!-- Email Recovery Input (Initially Hidden) -->
+            <Label x:Name="UsernameRecoveryLabel" Content="Tên đăng nhập:" FontWeight="Bold" Margin="30,10,30,0" Foreground="Black" Visibility="Collapsed"/>
+            <TextBox x:Name="UsernameRecoveryTextBox" Margin="30,0,30,10" Foreground="Black" Background="#e8e8e8" Visibility="Collapsed"/>
+            <!-- Email Recovery Input -->
+            <Label x:Name="EmailRecoveryLabel" Content="Email phục hồi:" FontWeight="Bold" Margin="30,10,30,0" Foreground="Black" Visibility="Collapsed"/>
+            <TextBox x:Name="EmailRecoveryTextBox" Margin="30,0,30,10" Foreground="Black" Background="#e8e8e8" Visibility="Collapsed"/>
+            <!-- Confirm Button for Password Recovery -->
+            <Button x:Name="ConfirmRecoveryButton" Content="Xác nhận" Click="ConfirmRecovery_Click" Background="#4285f4" Margin="30,10" Foreground="White" Visibility="Collapsed"/>
         </StackPanel>
+
 
         <!-- Sign Up Section -->
         <Border Grid.Column="1" Background="#4285f4" CornerRadius="10">
@@ -39,6 +54,8 @@
                 <TextBlock Text="Đăng ký tài khoản và đồng hành chùng chúng tôi" TextWrapping="Wrap" 
                            FontSize="14" Foreground="White" Margin="20" HorizontalAlignment="Center"/>
                 <Button Content="Đăng Ký" Click="OpenRegisterForm_Click" Background="White" Foreground="#4285f4" Margin="20" Padding="10" Height="44"/>
+                
+
             </StackPanel>
         </Border>
     </Grid>

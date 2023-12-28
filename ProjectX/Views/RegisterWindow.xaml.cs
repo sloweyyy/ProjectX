@@ -44,7 +44,7 @@ namespace ProjectX.Views
 
 
 
-        private bool Register(string username, string zaloapi, string fptapi, string password)
+        private bool Register(string username, string email, string zaloapi, string fptapi, string password)
         {
             var usersCollection = _database.GetCollection<BsonDocument>("users");
 
@@ -54,6 +54,7 @@ namespace ProjectX.Views
             var document = new BsonDocument
             {
                 { "username", username },
+                { "email", email }, 
                 { "useraccountname", BsonNull.Value },
                 { "zaloapi", zaloapi },
                 { "fptapi", fptapi },
@@ -79,12 +80,19 @@ namespace ProjectX.Views
         private async void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
             string username = UsernameTextBox.Text;
+            string email = EmailTextBox.Text;
             string zaloapi = ZaloAI.Text;
             string fptapi = FPTAI.Text;
             string password = PasswordBox.Password;
 
-            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(zaloapi) && !string.IsNullOrEmpty(password))
+            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(zaloapi) && !string.IsNullOrEmpty(password))
             {
+                if (!IsValidEmail(email))
+                {
+                    MessageBox.Show("Email không hợp lệ.");
+                    return;
+                }
+
                 if (CheckUsername(username))
                 {
                     MessageBox.Show("Tên tài khoản đã tồn tại.");
@@ -106,7 +114,13 @@ namespace ProjectX.Views
                         return;
                     }
 
-                    if (Register(username, zaloapi, fptapi, password))
+                    if (!IsStrongPassword(password))
+                    {
+                        MessageBox.Show("Mật khẩu phải có ít nhất 8 ký tự.");
+                        return;
+                    }
+
+                    if (Register(username, email, zaloapi, fptapi, password))
                     {
                         MessageBox.Show("Đăng ký thành công.");
                         LoginWindow loginWindow = new LoginWindow();
@@ -124,6 +138,21 @@ namespace ProjectX.Views
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
             }
         }
+
+        private bool IsStrongPassword(string password)
+        {
+            return password.Length >= 8;
+        }
+
+
+
+        private bool IsValidEmail(string email)
+        {
+            string emailPattern = @"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$";
+
+            return System.Text.RegularExpressions.Regex.IsMatch(email, emailPattern);
+        }
+
 
 
 

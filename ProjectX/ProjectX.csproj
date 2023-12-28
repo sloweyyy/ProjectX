@@ -364,7 +364,7 @@
     </ApplicationDefinition>
     <Compile Include="ViewModels\RelayCommand.cs" />
     <Compile Include="ViewModels\User.cs" />
-    <Compile Include="ViewModels\XuLyAmThanh.cs" />
+    <Compile Include="ViewModels\AudioProcessor.cs" />
     <Compile Include="Views\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
     </Compile>

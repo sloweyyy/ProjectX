@@ -20,6 +20,9 @@
 
             <Label Content="Username:" Margin="30,10,30,0" FontWeight="Bold" Foreground="Black"/>
             <TextBox x:Name="UsernameTextBox" Margin="30,0,30,10" Foreground="Black" Background="#e8e8e8" Height="40"/>
+            <Label Content="Email:" Margin="30,10,30,0" FontWeight="Bold" Foreground="Black"/>
+            <TextBox x:Name="EmailTextBox" Margin="30,0,30,10" Foreground="Black" Background="#e8e8e8" Height="40"/>
+
 
             <Label Content="Password:" Margin="30,10,30,0" FontWeight="Bold" Foreground="Black"/>
             <PasswordBox x:Name="PasswordBox" Margin="30,0,30,10" Foreground="Black" Background="#e8e8e8" Height="40"/>

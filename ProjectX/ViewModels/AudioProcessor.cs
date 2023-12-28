@@ -9,7 +9,7 @@ using Newtonsoft.Json.Linq;
 
 namespace ProjectX
 {
-    public class XuLyAmThanh
+    public class AudioProcessor
     {
         private readonly string apikey = "";
         private Process ffplay, ffmpeg;
@@ -24,7 +24,7 @@ namespace ProjectX
         private readonly string speed = "1.0";
         private string text = "";
 
-        public XuLyAmThanh(string _text, int _gender = 1, string _speed = "", string _apikey = "")
+        public AudioProcessor(string _text, int _gender = 1, string _speed = "", string _apikey = "")
         {
             gender = _gender;
             text = _text;
@@ -32,13 +32,13 @@ namespace ProjectX
             apikey = _apikey;
         }
 
-        public void mainRun()
+        public void MainRun()
         {
             ReadingThread = new Thread(() => Read());
             ReadingThread.Start();
         }
 
-        public void mainDown()
+        public void MainDown()
         {
             DownloadingThread = new Thread(() => Down());
             DownloadingThread.Start();
@@ -72,7 +72,7 @@ namespace ProjectX
             {
                 fname = "output";
                 processMes = "Đang tải file -> " + fname + ".mp3...";
-                DownFileM3U8toMP3(getTTS_URL(text), fname + ".mp3");
+                DownFileM3U8toMP3(GetTTS_URL(text), fname + ".mp3");
                 processMes = "Đã tải xong file -> " + fname + ".mp3";
                 MessageBox.Show("Đã tải xong\nVui lòng check thư mục audio");
             }
@@ -105,7 +105,7 @@ namespace ProjectX
             else
             {
                 processMes = "Đang chạy trình phát...";
-                PlayM3U8FromUrl(getTTS_URL(text));
+                PlayM3U8FromUrl(GetTTS_URL(text));
             }
 
             processMes = "Đã xong!";
@@ -136,7 +136,7 @@ namespace ProjectX
 
             foreach (var itemText in final_input_cutted)
             {
-                linksOfM3u8.Add(getTTS_URL(itemText));
+                linksOfM3u8.Add(GetTTS_URL(itemText));
                 Thread.Sleep(2000);
             }
         }
@@ -145,7 +145,7 @@ namespace ProjectX
         {
             try
             {
-                if (ffmpeg != null) ffmpeg.Kill();
+                ffmpeg?.Kill();
             }
             catch
             {
@@ -153,7 +153,7 @@ namespace ProjectX
 
             try
             {
-                if (DownloadingThread != null) DownloadingThread.Abort();
+                DownloadingThread?.Abort();
             }
             catch
             {
@@ -167,7 +167,7 @@ namespace ProjectX
         {
             try
             {
-                if (ffplay != null) ffplay.Kill();
+                ffplay?.Kill();
             }
             catch
             {
@@ -175,7 +175,7 @@ namespace ProjectX
 
             try
             {
-                if (ReadingThread != null) ReadingThread.Abort();
+                ReadingThread?.Abort();
             }
             catch
             {
@@ -209,7 +209,7 @@ namespace ProjectX
             ffplay.WaitForExit();
         }
 
-        private string getTTS_URL(string _text)
+        private string GetTTS_URL(string _text)
         {
             File.WriteAllText(path + "\\zalo_tts\\output.txt", "");
             File.WriteAllText(path + "\\zalo_tts\\text.txt", _text);
@@ -276,7 +276,7 @@ namespace ProjectX
         }
 
 
-        public string getProcessMes()
+        public string GetProcessMes()
         {
             return processMes;
         }

@@ -31,6 +31,8 @@
 
                 <Label Content="Tên tài khoản:" FontWeight="Bold" Foreground="Black"/>
                 <TextBlock Name="_accountNameTextBox" Text="{Binding useraccountname, Mode=TwoWay}" Foreground="Black" Margin="4,0,0,10" Width="300" HorizontalAlignment="Left"/>
+                <Label Content="Email:" FontWeight="Bold" Foreground="Black"/>
+                <TextBlock Text="{Binding email}" Foreground="Black" Margin="4,0,0,10" Width="300" HorizontalAlignment="Left"/>
 
                 <Label Content="Username:" FontWeight="Bold" Foreground="Black" Margin="0,10,0,0"/>
                 <TextBlock Text="{Binding username, Mode=TwoWay}" Foreground="Black" Margin="4,0,0,10" Width="300" HorizontalAlignment="Left"/>

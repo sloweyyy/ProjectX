@@ -202,6 +202,10 @@ D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.ap
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.csproj.CopyComplete
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.exe
 D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\ProjectX.pdb
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\FaceMatch.baml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\Translator.baml
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\FaceMatch.g.cs
+D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\Translator.g.cs
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\runtimes\win-x64\native\eng.base.traineddata
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\runtimes\win-x64\native\eng.best.traineddata
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\bin\Debug\runtimes\win-x64\native\eng.fast.traineddata
@@ -411,7 +415,3 @@ D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.application
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.csproj.CopyComplete
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.exe
 D:\Code Workspace\WPF\ProjectX\IT008.O12\ProjectX\obj\Debug\ProjectX.pdb
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\FaceMatch.baml
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\Translator.baml
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\FaceMatch.g.cs
-D:\HK3_2023-2024\LapTrinhTrucQuan_IT008\IT008.O12\ProjectX\obj\Debug\Views\Translator.g.cs

@@ -4,6 +4,9 @@ using System.Windows.Controls;
 using System.Windows;
 using RestSharp;
 using System.IO;
+using System.Net.Mail;
+using System.Net;
+using System.Linq;
 
 namespace ProjectX.Views
 {
@@ -130,6 +133,104 @@ namespace ProjectX.Views
             }
         }
 
+        private void ForgotPassword_Click(object sender, RoutedEventArgs e)
+        {
+            UsernameRecoveryLabel.Visibility = Visibility.Visible;
+            UsernameRecoveryTextBox.Visibility = Visibility.Visible;
+            EmailRecoveryLabel.Visibility = Visibility.Visible;
+            EmailRecoveryTextBox.Visibility = Visibility.Visible;
+            ConfirmRecoveryButton.Visibility = Visibility.Visible;
 
+        }
+
+        private void ConfirmRecovery_Click(object sender, RoutedEventArgs e)
+        {
+            string username = UsernameRecoveryTextBox.Text;
+            string userEmail = EmailRecoveryTextBox.Text;
+
+            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(userEmail))
+            {
+                var user = GetUserByUsernameAndEmail(username, userEmail);
+
+                if (user != null)
+                {
+                    string newPassword = GenerateRandomPassword(10);
+                    UpdatePassword(user.username, newPassword);
+                    SendPasswordRecoveryEmail(userEmail, newPassword);
+
+                    MessageBox.Show("Mật khẩu mới đã được gửi đến địa chỉ email của bạn.");
+                }
+                else
+                {
+                    MessageBox.Show("Thông tin không khớp hoặc không tồn tại trong hệ thống.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
+            }
+        }
+
+        private User GetUserByUsernameAndEmail(string username, string email)
+        {
+            var filter = Builders<User>.Filter.And(
+                Builders<User>.Filter.Eq(u => u.username, username),
+                Builders<User>.Filter.Eq(u => u.email, email)
+            );
+
+            return _usersCollection.Find(filter).FirstOrDefault();
+        }
+
+
+        private void UpdatePassword(string username, string newPassword)
+        {
+            var filter = Builders<User>.Filter.Eq(u => u.username, username);
+            var update = Builders<User>.Update.Set(u => u.password, BCrypt.Net.BCrypt.HashPassword(newPassword));
+
+            _usersCollection.UpdateOne(filter, update);
+        }
+
+        private string GenerateRandomPassword(int length)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var random = new Random();
+            return new string(Enumerable.Repeat(chars, length)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+
+        private void SendPasswordRecoveryEmail(string userEmail, string newPassword)
+        {
+            var smtpClient = new SmtpClient("smtp.gmail.com")
+            {
+                Port = 587,
+                Credentials = new NetworkCredential("sloweycontact@gmail.com", "qpxb dmnf wnrk ttyt\r\n"), // Use your App Password here
+                EnableSsl = true,
+            };
+
+            var mailMessage = new MailMessage
+            {
+                From = new MailAddress("sloweycontact@gmail.com"),
+                Subject = "Khôi phục mật khẩu",
+                IsBodyHtml = true, // Set to true for HTML content
+            };
+
+            // Customize the email body with HTML formatting
+            string htmlBody = $@"
+        <html>
+            <body>
+                <p>Xin chào {userEmail},</p>
+                <p>Chúng tôi nhận được yêu cầu khôi phục mật khẩu cho tài khoản của bạn.</p>
+                <p>Mật khẩu mới của bạn là: <strong>{newPassword}</strong></p>
+                <p>Đừng chia sẻ mật khẩu này với người khác. Để đảm bảo an toàn, bạn nên đổi mật khẩu ngay sau khi đăng nhập.</p>
+                <p>Trân trọng,</p>
+                <p>Đội ngũ hỗ trợ ProjectX</p>
+            </body>
+        </html>";
+
+            mailMessage.Body = htmlBody;
+            mailMessage.To.Add(userEmail);
+
+            smtpClient.Send(mailMessage);
+        }
     }
 }
