@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Dịch Ngôn Ngữ" Height="472" Width="800"
         Background="White" WindowStartupLocation="CenterScreen"
-        ResizeMode="NoResize" Icon="../assets/AppIcon.ico"
+        ResizeMode="CanMinimize" Icon="../assets/AppIcon.ico"
         WindowStyle="SingleBorderWindow">
 
     <Grid Margin="0,0,0,147">

@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Điều khoản và điều kiện" Height="563" Width="546"
         WindowStartupLocation="CenterScreen"
-        ResizeMode="NoResize"
+        ResizeMode="CanMinimize"
         Background="#202025" Icon="../assets/AppIcon.ico">
     
     <Grid Margin="0,0,0,364">

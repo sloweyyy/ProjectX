@@ -1,13 +1,13 @@
 ﻿using System;
-using System.Threading.Tasks;
-using MongoDB.Driver;
-using MongoDB.Bson;
-using BCrypt.Net;
-using RestSharp;
-using System.Windows.Controls;
-using System.Windows;
 using System.Diagnostics;
+using System.Net;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Navigation;
+using MongoDB.Bson;
+using MongoDB.Driver;
+using RestSharp;
 
 namespace ProjectX.Views
 {
@@ -22,16 +22,16 @@ namespace ProjectX.Views
         }
 
 
-
         private IMongoDatabase GetMongoDatabase()
         {
-            string connectionString =
+            var connectionString =
                 "mongodb+srv://slowey:tlvptlvp@projectx.3vv2dfv.mongodb.net/";
-            string databaseName = "ProjectX";
+            var databaseName = "ProjectX";
 
             var client = new MongoClient(connectionString);
             return client.GetDatabase(databaseName);
         }
+
         private bool CheckUsername(string username)
         {
             var usersCollection = _database.GetCollection<BsonDocument>("users");
@@ -43,25 +43,24 @@ namespace ProjectX.Views
         }
 
 
-
         private bool Register(string username, string email, string zaloapi, string fptapi, string password)
         {
             var usersCollection = _database.GetCollection<BsonDocument>("users");
 
-            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
-            DateTime currentTimestamp = DateTime.Now;
+            var hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
+            var currentTimestamp = DateTime.Now;
 
             var document = new BsonDocument
             {
                 { "username", username },
-                { "email", email }, 
+                { "email", email },
                 { "useraccountname", BsonNull.Value },
                 { "zaloapi", zaloapi },
                 { "fptapi", fptapi },
                 { "password", hashedPassword },
                 { "created_at", currentTimestamp },
                 { "last_used_at", currentTimestamp },
-                { "premium", false  }
+                { "premium", false }
             };
 
             try
@@ -76,16 +75,16 @@ namespace ProjectX.Views
             }
         }
 
-
         private async void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
-            string username = UsernameTextBox.Text;
-            string email = EmailTextBox.Text;
-            string zaloapi = ZaloAI.Text;
-            string fptapi = FPTAI.Text;
-            string password = PasswordBox.Password;
+            var username = UsernameTextBox.Text;
+            var email = EmailTextBox.Text;
+            var zaloapi = ZaloAI.Text;
+            var fptapi = FPTAI.Text;
+            var password = PasswordBox.Password;
 
-            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(zaloapi) && !string.IsNullOrEmpty(password))
+            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(zaloapi) &&
+                !string.IsNullOrEmpty(password))
             {
                 if (!IsValidEmail(email))
                 {
@@ -99,8 +98,8 @@ namespace ProjectX.Views
                 }
                 else
                 {
-                    bool isZaloKeyValid = await CheckZaloKeyAsync(zaloapi);
-                    bool isFPTKeyValid = await CheckFPTKeyAsync(fptapi);
+                    var isZaloKeyValid = await CheckZaloKeyAsync(zaloapi);
+                    var isFPTKeyValid = await CheckFPTKeyAsync(fptapi);
 
                     if (!isZaloKeyValid)
                     {
@@ -123,9 +122,9 @@ namespace ProjectX.Views
                     if (Register(username, email, zaloapi, fptapi, password))
                     {
                         MessageBox.Show("Đăng ký thành công.");
-                        LoginWindow loginWindow = new LoginWindow();
+                        var loginWindow = new LoginWindow();
                         loginWindow.Show();
-                        this.Close();
+                        Close();
                     }
                     else
                     {
@@ -145,22 +144,19 @@ namespace ProjectX.Views
         }
 
 
-
         private bool IsValidEmail(string email)
         {
-            string emailPattern = @"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$";
+            var emailPattern = @"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$";
 
-            return System.Text.RegularExpressions.Regex.IsMatch(email, emailPattern);
+            return Regex.IsMatch(email, emailPattern);
         }
-
-
 
 
         private void BackToLoginButton_Click(object sender, RoutedEventArgs e)
         {
-            LoginWindow loginWindow = new LoginWindow();
+            var loginWindow = new LoginWindow();
             loginWindow.Show();
-            this.Close();
+            Close();
         }
 
         private async Task<bool> CheckZaloKeyAsync(string key)
@@ -172,10 +168,7 @@ namespace ProjectX.Views
 
             var response = await client.ExecuteAsync(request);
 
-            if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
-            {
-                return false;
-            }
+            if (response.StatusCode == HttpStatusCode.Unauthorized) return false;
 
             return true;
         }
@@ -189,19 +182,14 @@ namespace ProjectX.Views
 
             var response = await client.ExecuteAsync(request);
 
-            if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
-            {
-                return false;
-            }
+            if (response.StatusCode == HttpStatusCode.Unauthorized) return false;
 
             return true;
         }
+
         private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
         {
-            // Mở liên kết trong trình duyệt mặc định
             Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
-
-            // Ngăn chặn chuyển hướng trong Hyperlink
             e.Handled = true;
         }
     }

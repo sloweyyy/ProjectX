@@ -1,7 +1,7 @@
 ﻿<Window x:Class="ProjectX.Views.TTS"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Text-to-speech" Height="377" Width="728" WindowStartupLocation="CenterScreen" Background="White" ResizeMode="NoResize" Visibility="Visible" WindowStyle="SingleBorderWindow" Icon="../assets/AppIcon.ico">
+        Title="Text-to-speech" Height="377" Width="728" WindowStartupLocation="CenterScreen" Background="White" ResizeMode="CanMinimize" Visibility="Visible" WindowStyle="SingleBorderWindow" Icon="../assets/AppIcon.ico">
 
     <Grid x:Name="_back" MouseLeftButtonDown="_back_MouseLeftButtonDown" Height="337" VerticalAlignment="Top">
         <Grid.ColumnDefinitions>

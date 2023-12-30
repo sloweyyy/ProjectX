@@ -5,7 +5,7 @@
         WindowStartupLocation="CenterScreen"
         Background="White"
         Icon="../assets/AppIcon.ico"
-        ResizeMode="NoResize">
+        ResizeMode="CanMinimize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
