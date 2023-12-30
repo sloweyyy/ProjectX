@@ -18,7 +18,6 @@
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- StackPanel chứa các nút và nhãn -->
         <StackPanel Grid.Row="0" Orientation="Vertical" Margin="0,106,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.RowSpan="2">
             <Image Source="../assets/Logo.png" Height="52" Width="140"/>
 
@@ -39,11 +38,9 @@
             <TextBlock x:Name="ResultText" Margin="30,20,30,0" FontSize="16" TextWrapping="Wrap" Foreground="Black"/>
         </StackPanel>
 
-        <!-- Blue Section with Rounded Corners -->
         <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Background="#4285f4" CornerRadius="10">
             <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="Kết quả khớp khuôn mặt" FontWeight="Bold" FontSize="24" Foreground="White" HorizontalAlignment="Center" Margin="10"/>
-                <!-- Hiển thị ảnh và kết quả -->
                 <Image x:Name="ImageView1" Margin="10" Height="200" Width="200"/>
                 <Image x:Name="ImageView2" Margin="10" Height="200" Width="200"/>
                 <TextBlock x:Name="MatchResultText" Text="Kết quả sẽ hiển thị ở đây" Foreground="White" TextWrapping="Wrap" Margin="10" HorizontalAlignment="Center"/>
