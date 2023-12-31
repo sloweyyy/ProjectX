@@ -28,7 +28,7 @@
                      BorderBrush="#4285f4" 
                      TextChanged="TextContent_TextChanged"/>
                 <Label x:Name="CharCountLabel" Content="Ký tự: 0" Foreground="Black" Margin="69,86,64,-77" Grid.Row="1" />
-                <ComboBox x:Name="LanguageSelection" Width="200" Height="33" Background="White" Grid.Row="1" Margin="69,0,269,0">
+                <ComboBox x:Name="LanguageSelection" Width="200" Height="33" Background="White" Grid.Row="1" Margin="69,0,269,0" >
                     <ComboBoxItem Content="Vietnamese" IsSelected="True"/>
                     <ComboBoxItem Content="English"/>
                     <ComboBoxItem Content="Afrikaans"/>

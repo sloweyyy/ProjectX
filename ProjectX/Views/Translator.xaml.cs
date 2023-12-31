@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Web.Script.Serialization;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using IronOcr;
 using Microsoft.Win32;
 
@@ -68,6 +69,7 @@ namespace ProjectX.Views
         private void TextContent_TextChanged(object sender, TextChangedEventArgs e)
         {
             CharCountLabel.Content = "Characters: " + TextContent.Text.Length;
+            LanguageSelection.SelectedIndex = 0;
         }
 
         private void BtnDownloadFile_Click(object sender, RoutedEventArgs e)
@@ -261,5 +263,8 @@ namespace ProjectX.Views
             base.OnClosed(e);
             httpClient.Dispose();
         }
+
+       
+       
     }
 }
