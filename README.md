@@ -181,9 +181,9 @@ ProjectX hướng đến mọi người dùng, từ những người dùng cá n
 
 | MSSV       | Họ và Tên          | Email                   | Github                                                                                                                      | Vai trò                |
 | ---------- | ------------------ | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- | -----------------------|
-| `22521145` | Trương Lê Vĩnh Phúc - Trưởng nhóm| 222521145@gm.uit.edu.vn | [![](https://img.shields.io/badge/sloweyyy-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/sloweyyy) |Developer, UX/UI Designer|
-| `22521644` | Trần Huỳnh Nhã Uyên| 22521644@gm.uit.edu.vn | [![](https://img.shields.io/badge/tranuyn-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/tranuyn) | Designer|
-| `22520936` | Trần Thị Mộng Trúc Ngân| 22520936@gm.uit.edu.vn | [![](https://img.shields.io/badge/TTMTN-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/TTMTN) |Researcher |
+| `22521145` | Trương Lê Vĩnh Phúc - Trưởng nhóm| 222521145@gm.uit.edu.vn | [![](https://img.shields.io/badge/sloweyyy-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/sloweyyy) |Leader, Front-end Developer, Back-end Developer, UX/UI Designer, Researcher|
+| `22521644` | Trần Huỳnh Nhã Uyên| 22521644@gm.uit.edu.vn | [![](https://img.shields.io/badge/tranuyn-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/tranuyn) | Researcher, Front-end Developer, UI/UX Designer|
+| `22520936` | Trần Thị Mộng Trúc Ngân| 22520936@gm.uit.edu.vn | [![](https://img.shields.io/badge/TTMTN-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/TTMTN) |Researcher, Back-end Developer |
 
 # IV. Người hướng dẫn
 Ths. Huỳnh Tuấn Anh       
