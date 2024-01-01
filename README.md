@@ -70,7 +70,7 @@ ProjectX được xây dựng trên hai nền tảng chính là desktop và web,
       <li> Hình ảnh được tải lên sẽ được hiển thị trong hai khung hình ảnh ở phía dưới của cửa sổ.
       </ul> 
       
-  - **Translator (Dịch)**:Ứng dụng này cho phép người dùng giao tiếp với Gemini thông qua văn bản. Giao diện người dùng bao gồm Listbox để hiển thị cuộc trò chuyện và một hộp nhập liệu để người dùng nhập văn bản. Khi người dùng nhập văn bản, Gemini sẽ xử lý và trả lời, giao diện tương tự các Chatbot có trên thị trường.
+  - **Translator (Dịch):** Cho phép người dùng dịch văn bản từ một ngôn ngữ này sang ngôn ngữ khác. 
       <ul>
       <li> Người dùng có thể nhập văn bản cần dịch vào text block. 
       <li> Người dùng có thể chọn ngôn ngữ mà họ muốn dịch văn bản sang từ combo box chứa danh sách các ngôn ngữ khác nhau.
@@ -115,52 +115,46 @@ ProjectX hướng đến mọi người dùng, từ những người dùng cá n
 ### 9. Mục tiêu
    -	**Đáp ứng nhu cầu của người dùng**:
        <ul>
-      <li>Ứng dụng cần phải đáp ứng được các yêu cầu cụ thể của người dùng, đảm bảo tính ổn định và dễ sử dụng. Điều này đòi hỏi việc hiểu rõ mục tiêu kinh doanh của khách hàng và kỳ vọng của họ đối với ứng dụng         mới</li>
+      <li>ProjectX sẽ được thiết kế để đáp ứng các yêu cầu cụ thể của người dùng, từ những người dùng cá nhân đến các nhà phát triển và tổ chức doanh nghiệp, đảm bảo tính ổn định và dễ sử dụng.i</li>
       </ul>
     	
    -	**Thay thế cho các ứng dụng cũ**:
       <ul>
-      <li>Ứng dụng cần phải có khả năng thay thế cho các ứng dụng cũ, vượt trội hơn về giao diện và tính năng, giúp người dùng quản lý công việc một cách hiệu quả hơn
+      <li>Ứng dụng này nhằm mục đích thay thế các công cụ lỗi thời bằng cách cung cấp một giao diện người dùng cải tiến và các tính năng mới, giúp người dùng quản lý công việc một cách hiệu quả hơn.
       </ul>
     	
    -	**Tính năng tiêu chuẩn và mới**:
        <ul>
-      <li>Ứng dụng cần phải đáp ứng những tính năng tiêu chuẩn cần có trên những ứng dụng quản lý hiện có trên thị trường. Đồng thời, ứng dụng cũng cần mở rộng và phát triển những tính năng mới, hỗ trợ tối đa cho người dùng và tự động hóa các giai đoạn quản lý
+      <li>ProjectX sẽ tích hợp các tính năng tiêu chuẩn hiện có trên thị trường và phát triển thêm các tính năng mới để hỗ trợ tối đa cho người dùng và tự động hóa các quy trình làm việc.
       </ul>
     	
    -	**Giao diện thân thiện**:
       <ul>
-      <li> Giao diện của ứng dụng cần phải thân thiện với người dùng, có bố cục hợp lý, hài hoà về màu sắc và mang tính đồng bộ cao
+      <li> Giao diện của ProjectX sẽ được thiết kế để thân thiện với người dùng, với bố cục hợp lý, hài hòa về màu sắc và mang tính đồng bộ cao.
       </ul>
     	
    -  **Tương thích với nhiều hệ điều hành**:
       <ul>
-      <li> Ứng dụng cần phải tương thích với đa số các hệ điều hành phổ biến hiện nay như Window Vista SP1, Window 8.1, Window 10. Trong tương lai mở rộng sang các nền tảng như MacOS, LINUX
+      <li>Ứng dụng sẽ tương thích với các hệ điều hành phổ biến như Windows Vista SP1, Windows 8.1, Windows 10, Windows 11 và có kế hoạch mở rộng tương thích với các nền tảng khác như MacOS và Linux trong tương lai.
       </ul>  
       
    -	**Hoạt động ổn định**:
        <ul>
-      <li> Ứng dụng cần phải hoạt động ổn định, tránh những trường hợp xảy ra lỗi xung đột với hệ thống gây ra khó chịu cho người dùng trong quá trình sử dụng
+      <li> ProjectX sẽ được thiết kế để hoạt động ổn định, tránh xung đột với hệ thống và giảm thiểu sự cố cho người dùng.
       </ul>
       
    -	**Dễ dàng mở rộng và nâng cấp**:
        <ul>
-      <li> Việc mở rộng, nâng cấp ứng dụng về sau phải dễ dàng khi người dùng có nhu cầu
-      </ul>
+      <li> Ứng dụng sẽ được xây dựng để dễ dàng mở rộng và nâng cấp theo nhu cầu của người dùng.
       
    -	**Phân quyền cho người dùng**:
        <ul>
-      <li> Ứng dụng cần phải có khả năng phân quyền cho người dùng thông qua tài khoản, giúp quản lý và kiểm soát quyền truy cập của người dùng một cách hiệu quả
-      </ul>
-    	
-   -	**Tích hợp với các ứng dụng khác**:
-      <ul>
-      <li> Ứng dụng cần phải có khả năng tích hợp với các ứng dụng khác mà người dùng cần, giúp tăng cường khả năng tương tác và hiệu suất làm việc
+      <li> ProjectX sẽ có khả năng phân quyền cho người dùng thông qua tài khoản, giúp quản lý và kiểm soát quyền truy cập một cách hiệu quả.
       </ul>
     	
    -	**Trở thành lựa chọn hàng đầu của khách hàng**:
       <ul>
-      <li> Mục tiêu cuối cùng là trở thành một trong những ứng dụng được khách hàng lựa chọn, tin tưởng sử dụng
+      <li> Mục tiêu cuối cùng của ProjectX là trở thành một trong những ứng dụng được người dùng lựa chọn và tin tưởng sử dụng.
       </ul> 
 
 ### 10.	Hệ thống third party / API
@@ -187,9 +181,9 @@ ProjectX hướng đến mọi người dùng, từ những người dùng cá n
 
 | MSSV       | Họ và Tên          | Email                   | Github                                                                                                                      | Vai trò                |
 | ---------- | ------------------ | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- | -----------------------|
-| `22521145` | Trương Lê Vĩnh Phúc - Trưởng nhóm| 222521145@gm.uit.edu.vn | [![](https://img.shields.io/badge/sloweyyy-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/sloweyyy) | |
-| `22521644` | Trần Huỳnh Nhã Uyên| 22521644@gm.uit.edu.vn | [![](https://img.shields.io/badge/tranuyn-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/tranuyn) | |
-| `22520936` | Trần Thị Mộng Trúc Ngân| 22520936@gm.uit.edu.vn | [![](https://img.shields.io/badge/TTMTN-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/TTMTN) | |
+| `22521145` | Trương Lê Vĩnh Phúc - Trưởng nhóm| 222521145@gm.uit.edu.vn | [![](https://img.shields.io/badge/sloweyyy-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/sloweyyy) |Developer, UX/UI Designer|
+| `22521644` | Trần Huỳnh Nhã Uyên| 22521644@gm.uit.edu.vn | [![](https://img.shields.io/badge/tranuyn-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/tranuyn) | Designer|
+| `22520936` | Trần Thị Mộng Trúc Ngân| 22520936@gm.uit.edu.vn | [![](https://img.shields.io/badge/TTMTN-%2324292f.svg?style=flat-square&logo=github      )](https://github.com/TTMTN) |Researcher |
 
 # IV. Người hướng dẫn
 Ths. Huỳnh Tuấn Anh       
