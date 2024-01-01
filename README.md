@@ -170,12 +170,16 @@ ProjectX hướng đến mọi người dùng, từ những người dùng cá n
   <ul>
       <li> API này được sử dụng để tương tác với người dùng thông qua một giao diện chat đơn giản. Quá trình gửi thông tin và nhận phản hồi từ server tương tự như việc sử dụng API dịch ngôn ngữ.
     </ul>
-- **A10.4	API đọc văn bản thành giọng nói:**
+- **API đọc văn bản thành giọng nói:**
   <ul>
       <li> Đồ án sử dụng API đọc văn bản thành giọng nói (TTS) từ ZaloAI để chuyển đổi văn bản thành giọng nói tự nhiên. Module ffplay được sử dụng để phát văn bản qua thiết bị âm thanh trên máy người dùng.
-(Text to Audio Converter, n.d.)Dự án sử dụng API từ FPTAI để so sánh khuôn mặt. Hai hình ảnh được người dùng tải lên được gửi đến API và kết quả phân tích được nhận về dưới dạng JSON. Kết quả sau đó được phân tích và hiển thị trên giao diện người dùng.
     </ul>
-  Trong tất cả các quá trình này, HttpClient được sử dụng để gửi yêu cầu HTTP, MultipartFormDataContent để tạo nội dung yêu cầu, và JsonConvert để phân tích chuỗi JSON trả về từ API.
+
+- **API Xác thực khuôn mặt :**
+    <ul>
+    <li> Đồ án sử dụng API xác thực khuôn mặt (Facematch) từ FPTAI để xác định xem chúng có thuộc về cùng một người hay không và thông báo độ tương đồng giữa 2 khuôn mặt (2 khuôn mặt là cùng một người nếu độ tương đồng vượt ngưỡng 80%) </ul>
+
+Trong tất cả các quá trình này, HttpClient được sử dụng để gửi yêu cầu HTTP, MultipartFormDataContent để tạo nội dung yêu cầu, và JsonConvert để phân tích chuỗi JSON trả về từ API.
 
 # III. Tác giả
 
