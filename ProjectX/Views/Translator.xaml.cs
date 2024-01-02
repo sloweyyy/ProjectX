@@ -69,7 +69,6 @@ namespace ProjectX.Views
         private void TextContent_TextChanged(object sender, TextChangedEventArgs e)
         {
             CharCountLabel.Content = "Characters: " + TextContent.Text.Length;
-            LanguageSelection.SelectedIndex = 0;
         }
 
         private void BtnDownloadFile_Click(object sender, RoutedEventArgs e)
@@ -101,7 +100,7 @@ namespace ProjectX.Views
             {
                 var selectedLanguage = GetLanguageCodeFromComboBox();
                 TextContent.Text = await TranslateTextAsync(TextContent.Text, currentLanguage, selectedLanguage);
-                currentLanguage = selectedLanguage; // Update currentLanguage
+                currentLanguage = selectedLanguage; 
             }
         }
 
@@ -125,7 +124,6 @@ namespace ProjectX.Views
                 }
 
                 if (!string.IsNullOrEmpty(translation))
-                    // Remove any leading whitespace
                     translation = translation.TrimStart();
 
                 return translation;
