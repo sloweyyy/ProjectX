@@ -3,8 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Điều khoản và điều kiện" Height="563" Width="546"
         WindowStartupLocation="CenterScreen"
-        ResizeMode="NoResize"
-        Background="#202025" Icon="../assets/AppIcon.ico">
+        ResizeMode="CanMinimize"
+        Background="#FFFFFF" Icon="../assets/AppIcon.ico">
     
     <Grid Margin="0,0,0,364">
         <StackPanel Orientation="Vertical" Margin="10,10,10,-356">
@@ -12,26 +12,26 @@
                    HorizontalAlignment="Center" />
 
             <!-- Content -->
-            <TextBlock Foreground="White" Text="1. Đồng ý với các điều khoản" FontWeight="Bold" Margin="30,10,30,10" TextWrapping="Wrap"/>
-            <TextBlock Foreground="White" Text="Bằng việc tải xuống, cài đặt và sử dụng ứng dụng, người dùng đồng ý tuân theo các điều khoản và điều kiện được quy định trong văn bản này. Nếu người dùng không đồng ý với bất kỳ điều khoản nào, người dùng không nên sử dụng ứng dụng" Margin="30,0,30,10" TextWrapping="Wrap"/>
+            <TextBlock Foreground="Black" Text="1. Đồng ý với các điều khoản" FontWeight="Bold" Margin="30,10,30,10" TextWrapping="Wrap"/>
+            <TextBlock Foreground="Black" Text="Bằng việc tải xuống, cài đặt và sử dụng ứng dụng, người dùng đồng ý tuân theo các điều khoản và điều kiện được quy định trong văn bản này. Nếu người dùng không đồng ý với bất kỳ điều khoản nào, người dùng không nên sử dụng ứng dụng" Margin="30,0,30,10" TextWrapping="Wrap"/>
 
-            <TextBlock Foreground="White" Text="2. Sử Dụng Hợp Pháp" FontWeight="Bold" Margin="30,0,30,10" TextWrapping="Wrap"/>
-            <TextBlock Foreground="White" Text="Người dùng cam kết sử dụng ứng dụng chỉ cho mục đích hợp pháp và tuân thủ các quy định pháp luật." Margin="30,0,30,10" TextWrapping="Wrap"/>
+            <TextBlock Foreground="Black" Text="2. Sử Dụng Hợp Pháp" FontWeight="Bold" Margin="30,0,30,10" TextWrapping="Wrap"/>
+            <TextBlock Foreground="Black" Text="Người dùng cam kết sử dụng ứng dụng chỉ cho mục đích hợp pháp và tuân thủ các quy định pháp luật." Margin="30,0,30,10" TextWrapping="Wrap"/>
 
-            <TextBlock Foreground="White" Text="3. Bảo Mật và Dữ Liệu Cá Nhân" FontWeight="Bold" Margin="30,0,30,10" TextWrapping="Wrap"/>
-            <TextBlock Foreground="White" Text="Ứng dụng tôn trọng quyền riêng tư của người dùng và bảo vệ dữ liệu cá nhân." Margin="30,0,30,10" TextWrapping="Wrap"/>
+            <TextBlock Foreground="Black" Text="3. Bảo Mật và Dữ Liệu Cá Nhân" FontWeight="Bold" Margin="30,0,30,10" TextWrapping="Wrap"/>
+            <TextBlock Foreground="Black" Text="Ứng dụng tôn trọng quyền riêng tư của người dùng và bảo vệ dữ liệu cá nhân." Margin="30,0,30,10" TextWrapping="Wrap"/>
 
-            <TextBlock Foreground="White" Text="4. Giới Hạn Trách Nhiệm" FontWeight="Bold" Margin="30,0,30,10" TextWrapping="Wrap"/>
-            <TextBlock Foreground="White" Text="Nhóm ProjectX không chịu trách nhiệm cho bất kỳ thiệt hại nào liên quan đến việc sử dụng ứng dụng." Margin="30,0,30,10" TextWrapping="Wrap"/>
+            <TextBlock Foreground="Black" Text="4. Giới Hạn Trách Nhiệm" FontWeight="Bold" Margin="30,0,30,10" TextWrapping="Wrap"/>
+            <TextBlock Foreground="Black" Text="Nhóm ProjectX không chịu trách nhiệm cho bất kỳ thiệt hại nào liên quan đến việc sử dụng ứng dụng." Margin="30,0,30,10" TextWrapping="Wrap"/>
 
-            <TextBlock Foreground="White" Text="5. Thay Đổi Điều Khoản" FontWeight="Bold" Margin="30,0,30,10" TextWrapping="Wrap"/>
-            <TextBlock Foreground="White" Text="Nhóm ProjectX có quyền cập nhật điều khoản này mà không cần thông báo trước." Margin="30,0,30,10" TextWrapping="Wrap"/>
+            <TextBlock Foreground="Black" Text="5. Thay Đổi Điều Khoản" FontWeight="Bold" Margin="30,0,30,10" TextWrapping="Wrap"/>
+            <TextBlock Foreground="Black" Text="Nhóm ProjectX có quyền cập nhật điều khoản này mà không cần thông báo trước." Margin="30,0,30,10" TextWrapping="Wrap"/>
 
-            <TextBlock Foreground="White" Text="6. Bản Quyền" FontWeight="Bold" Margin="30,0,30,10" TextWrapping="Wrap"/>
-            <TextBlock Foreground="White" Text="Nội dung trong ứng dụng là tài sản của nhóm ProjectX và được bảo vệ theo luật sở hữu trí tuệ." Margin="30,0,30,10" TextWrapping="Wrap"/>
+            <TextBlock Foreground="Black" Text="6. Bản Quyền" FontWeight="Bold" Margin="30,0,30,10" TextWrapping="Wrap"/>
+            <TextBlock Foreground="Black" Text="Nội dung trong ứng dụng là tài sản của nhóm ProjectX và được bảo vệ theo luật sở hữu trí tuệ." Margin="30,0,30,10" TextWrapping="Wrap"/>
 
-            <TextBlock Foreground="White" Text="7. Quyền Chấm Dứt" FontWeight="Bold" Margin="30,0,30,10" TextWrapping="Wrap"/>
-            <TextBlock Foreground="White" Text="Nhóm ProjectX có quyền chấm dứt quyền truy cập nếu người dùng vi phạm các điều khoản này." Margin="30,0,30,10" TextWrapping="Wrap"/>
+            <TextBlock Foreground="Black" Text="7. Quyền Chấm Dứt" FontWeight="Bold" Margin="30,0,30,10" TextWrapping="Wrap"/>
+            <TextBlock Foreground="Black" Text="Nhóm ProjectX có quyền chấm dứt quyền truy cập nếu người dùng vi phạm các điều khoản này." Margin="30,0,30,10" TextWrapping="Wrap"/>
         </StackPanel>
     </Grid>
 </Window>

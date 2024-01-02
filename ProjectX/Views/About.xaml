@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Thông Tin" Height="431" Width="400"
         WindowStartupLocation="CenterScreen"
-        ResizeMode="NoResize"
+        ResizeMode="CanMinimize"
         Background="White" Icon="../assets/AppIcon.ico">
     <StackPanel Orientation="Vertical" Margin="10">
         <Label Content="Giới Thiệu" FontWeight="Bold" FontSize="20" VerticalAlignment="Center"

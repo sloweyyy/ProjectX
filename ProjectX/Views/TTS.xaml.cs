@@ -26,7 +26,7 @@ namespace ProjectX.Views
         private string _apikey;
         private CancellationTokenSource cancellationTokenSource;
         private string keylone = "";
-        private XuLyAmThanh MainXuLy;
+        private AudioProcessor MainXuLy;
         private Thread ThreadBackround;
 
         public TTS(string username)
@@ -146,8 +146,8 @@ namespace ProjectX.Views
                 var gender = arrGiongmini[Array.IndexOf(arrGiong, _nguoidoc.Text)];
                 var speed = StringBetween(_tocdo.Text, "(", ")");
                 var apikey = _apikey;
-                MainXuLy = new XuLyAmThanh(text, gender, speed, apikey);
-                MainXuLy.mainRun();
+                MainXuLy = new AudioProcessor(text, gender, speed, apikey);
+                MainXuLy.MainRun();
                 ThreadBackround = new Thread(() => Backround());
                 ThreadBackround.IsBackground = true;
                 ThreadBackround.Start();
@@ -192,8 +192,8 @@ namespace ProjectX.Views
                 var gender = arrGiongmini[Array.IndexOf(arrGiong, _nguoidoc.Text)];
                 var speed = StringBetween(_tocdo.Text, "(", ")");
                 var apikey = _apikey;
-                MainXuLy = new XuLyAmThanh(text, gender, speed, apikey);
-                MainXuLy.mainDown();
+                MainXuLy = new AudioProcessor(text, gender, speed, apikey);
+                MainXuLy.MainDown();
                 ThreadBackround = new Thread(() => Backround());
                 ThreadBackround.IsBackground = true;
                 ThreadBackround.Start();
@@ -232,7 +232,7 @@ namespace ProjectX.Views
         {
             while (true)
             {
-                Dispatcher.Invoke(() => { _tientring.Content = MainXuLy.getProcessMes(); });
+                Dispatcher.Invoke(() => { _tientring.Content = MainXuLy.GetProcessMes(); });
 
                 Thread.Sleep(2000);
             }

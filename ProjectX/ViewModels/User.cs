@@ -9,15 +9,28 @@ namespace ProjectX.Views
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        private string _zaloapi;
-        private string _fptapi;
-
         public string Id { get; set; }
 
         public string useraccountname { get; set; }
-
         public string username { get; set; }
         public string password { get; set; }
+
+        private string _email;
+        public string email
+        {
+            get { return _email; }
+            set
+            {
+                if (_email != value)
+                {
+                    _email = value;
+                    OnPropertyChanged(nameof(email));
+                }
+            }
+        }
+
+
+        private string _zaloapi;
         public string zaloapi
         {
             get { return _zaloapi; }
@@ -31,6 +44,7 @@ namespace ProjectX.Views
             }
         }
 
+        private string _fptapi;
         public string fptapi
         {
             get { return _fptapi; }
@@ -45,11 +59,8 @@ namespace ProjectX.Views
         }
 
         public bool __v { get; set; }
-
-        public DateTime last_used_at;
-
-        public DateTime created_at;
-
+        public DateTime last_used_at { get; set; }
+        public DateTime created_at { get; set; }
         public bool premium { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -59,4 +70,5 @@ namespace ProjectX.Views
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
+
 }

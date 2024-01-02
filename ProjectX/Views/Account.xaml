@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Tài Khoản" Height="450" Width="456"
         WindowStartupLocation="CenterScreen"
-        ResizeMode="NoResize"
+        ResizeMode="CanMinimize"
         Background="White" Icon="../assets/AppIcon.ico">
     <Grid Margin="10,10,10,-6">
 
