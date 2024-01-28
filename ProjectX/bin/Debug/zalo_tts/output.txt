@@ -1,1 +1,1 @@
-{"error_code":0,"data":{"url":"https://chunk.lab.zalo.ai/69d9442fb041591f0050/69d9442fb041591f0050"},"error_message":"Successful."}
+{"error_message":"Successful.","data":{"url":"https://chunk.lab.zalo.ai/b4e90e14fa7a13244a6b/b4e90e14fa7a13244a6b"},"error_code":0}
